@@ -60,19 +60,19 @@
   <meta name="robots" content="noindex, nofollow, noarchive" /><style>
 .pf-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:26px}
 @media(max-width:760px){.pf-grid{grid-template-columns:1fr}}
-.pf-group{background:#fff;border:1px solid var(--line);border-radius:6px;overflow:hidden;box-shadow:var(--soft-shadow);transition:transform .3s ease,box-shadow .3s ease}
+.pf-group{background:#fff;border:1px solid var(--line);border-radius:6px;overflow:hidden;box-shadow:var(--soft-shadow);transition:transform .3s ease}
 .pf-group:hover{transform:translateY(-4px)}
-.pf-mosaic{display:grid;grid-template-columns:1.7fr 1fr;grid-template-rows:1fr 1fr;gap:4px;height:320px;background:var(--aqua)}
+.pf-mosaic{display:flex;gap:4px;height:320px;background:var(--aqua)}
 @media(max-width:480px){.pf-mosaic{height:250px}}
-.pf-mosaic.pf-single{grid-template-columns:1fr;grid-template-rows:1fr}
-.pf-tile{position:relative;border:none;padding:0;cursor:zoom-in;overflow:hidden;background:var(--aqua-light)}
+.pf-cover{flex:1.65;min-width:0}
+.pf-rail{display:flex;flex-direction:column;gap:4px;flex:1;min-width:0}
+.pf-rail .pf-tile{flex:1;min-height:0}
+.pf-tile{position:relative;border:none;padding:0;cursor:zoom-in;overflow:hidden;background:var(--aqua-light);display:block;width:100%}
 .pf-tile img{width:100%;height:100%;object-fit:cover;transition:transform .45s ease}
-.pf-cover{grid-row:span 2}
-.pf-mosaic.pf-single .pf-cover{grid-row:auto}
-.pf-group:hover .pf-cover img{transform:scale(1.05) rotate(.4deg)}
-.pf-group:hover .pf-tile:nth-child(2) img{transform:scale(1.07) rotate(-1.2deg)}
-.pf-group:hover .pf-tile:nth-child(3) img{transform:scale(1.07) rotate(1.2deg)}
-.pf-group:hover .pf-tile:nth-child(4) img{transform:scale(1.07) rotate(-.8deg)}
+.pf-group:hover .pf-cover img{transform:scale(1.05)}
+.pf-group:hover .pf-rail .pf-tile:nth-child(1) img{transform:scale(1.08) rotate(-1deg)}
+.pf-group:hover .pf-rail .pf-tile:nth-child(2) img{transform:scale(1.08) rotate(1deg)}
+.pf-group:hover .pf-rail .pf-tile:nth-child(3) img{transform:scale(1.08) rotate(-.6deg)}
 .pf-more{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(28,46,40,.55);color:#fff;font-family:var(--font-ui);font-size:15px;font-weight:500;letter-spacing:.05em}
 .pf-meta{display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding:16px 18px 18px}
 .pf-meta h3{font-family:var(--font-heading);font-size:25px;font-weight:500;color:var(--ink);line-height:1.1}
@@ -247,27 +247,27 @@
       </div>
       <div class="pf-grid">
       <article class="pf-group">
-        <div class="pf-mosaic"><button class="pf-tile pf-cover" data-g="0" data-i="0" aria-label="View photos of Fluted wood island kitchen"><img src="assets/work-wood-island.jpg" alt="Fluted wood island, front" loading="lazy"></button><button class="pf-tile" data-g="0" data-i="1" aria-label="View photos of Fluted wood island kitchen"><img src="assets/work-fluted-stools.jpg" alt="Fluted island with bar stools" loading="lazy"></button><button class="pf-tile" data-g="0" data-i="2" aria-label="View photos of Fluted wood island kitchen"><img src="assets/work-fluted-shelving.jpg" alt="Fluted island with open shelving" loading="lazy"></button><button class="pf-tile" data-g="0" data-i="3" aria-label="View photos of Fluted wood island kitchen"><img src="assets/work-fluted-side.jpg" alt="Fluted island, side view" loading="lazy"><span class="pf-more">+2 more</span></button></div>
+        <div class="pf-mosaic"><button class="pf-tile pf-cover" data-g="0" data-i="0" aria-label="View photos of Fluted wood island kitchen"><img src="assets/work-wood-island.jpg" alt="Fluted wood island, front" loading="lazy"></button><div class="pf-rail"><button class="pf-tile" data-g="0" data-i="1" aria-label="View photos of Fluted wood island kitchen"><img src="assets/work-fluted-stools.jpg" alt="Fluted island with bar stools" loading="lazy"></button><button class="pf-tile" data-g="0" data-i="2" aria-label="View photos of Fluted wood island kitchen"><img src="assets/work-fluted-shelving.jpg" alt="Fluted island with open shelving" loading="lazy"></button><button class="pf-tile" data-g="0" data-i="3" aria-label="View photos of Fluted wood island kitchen"><img src="assets/work-fluted-side.jpg" alt="Fluted island, side view" loading="lazy"><span class="pf-more">+2 more</span></button></div></div>
         <div class="pf-meta"><h3>Fluted wood island kitchen</h3><span>5 photos · tap to view</span></div>
       </article>
       <article class="pf-group">
-        <div class="pf-mosaic"><button class="pf-tile pf-cover" data-g="1" data-i="0" aria-label="View photos of White kitchen, wood ceiling"><img src="assets/work-white-kitchen.jpg" alt="White kitchen with centre island" loading="lazy"></button><button class="pf-tile" data-g="1" data-i="1" aria-label="View photos of White kitchen, wood ceiling"><img src="assets/work-corner-range.jpg" alt="White kitchen corner, gas range" loading="lazy"></button><button class="pf-tile" data-g="1" data-i="2" aria-label="View photos of White kitchen, wood ceiling"><img src="assets/work-galley.jpg" alt="White galley kitchen" loading="lazy"></button><button class="pf-tile" data-g="1" data-i="3" aria-label="View photos of White kitchen, wood ceiling"><img src="assets/work-pantry.jpg" alt="Pantry storage wall" loading="lazy"></button></div>
+        <div class="pf-mosaic"><button class="pf-tile pf-cover" data-g="1" data-i="0" aria-label="View photos of White kitchen, wood ceiling"><img src="assets/work-white-kitchen.jpg" alt="White kitchen with centre island" loading="lazy"></button><div class="pf-rail"><button class="pf-tile" data-g="1" data-i="1" aria-label="View photos of White kitchen, wood ceiling"><img src="assets/work-corner-range.jpg" alt="White kitchen corner, gas range" loading="lazy"></button><button class="pf-tile" data-g="1" data-i="2" aria-label="View photos of White kitchen, wood ceiling"><img src="assets/work-galley.jpg" alt="White galley kitchen" loading="lazy"></button><button class="pf-tile" data-g="1" data-i="3" aria-label="View photos of White kitchen, wood ceiling"><img src="assets/work-pantry.jpg" alt="Pantry storage wall" loading="lazy"></button></div></div>
         <div class="pf-meta"><h3>White kitchen, wood ceiling</h3><span>4 photos · tap to view</span></div>
       </article>
       <article class="pf-group">
-        <div class="pf-mosaic"><button class="pf-tile pf-cover" data-g="2" data-i="0" aria-label="View photos of Waterfall island kitchen"><img src="assets/work-marble-island.jpg" alt="Marble island with pendant lights" loading="lazy"></button><button class="pf-tile" data-g="2" data-i="1" aria-label="View photos of Waterfall island kitchen"><img src="assets/work-darkwood-wine.jpg" alt="Dark wood island, wine fridge" loading="lazy"></button><button class="pf-tile" data-g="2" data-i="2" aria-label="View photos of Waterfall island kitchen"><img src="assets/work-waterfall-side.jpg" alt="Waterfall island, side view" loading="lazy"></button><button class="pf-tile" data-g="2" data-i="3" aria-label="View photos of Waterfall island kitchen"><img src="assets/work-darkwood-panel.jpg" alt="Panelled island, marble top" loading="lazy"><span class="pf-more">+3 more</span></button></div>
+        <div class="pf-mosaic"><button class="pf-tile pf-cover" data-g="2" data-i="0" aria-label="View photos of Waterfall island kitchen"><img src="assets/work-marble-island.jpg" alt="Marble island with pendant lights" loading="lazy"></button><div class="pf-rail"><button class="pf-tile" data-g="2" data-i="1" aria-label="View photos of Waterfall island kitchen"><img src="assets/work-darkwood-wine.jpg" alt="Dark wood island, wine fridge" loading="lazy"></button><button class="pf-tile" data-g="2" data-i="2" aria-label="View photos of Waterfall island kitchen"><img src="assets/work-waterfall-side.jpg" alt="Waterfall island, side view" loading="lazy"></button><button class="pf-tile" data-g="2" data-i="3" aria-label="View photos of Waterfall island kitchen"><img src="assets/work-darkwood-panel.jpg" alt="Panelled island, marble top" loading="lazy"><span class="pf-more">+3 more</span></button></div></div>
         <div class="pf-meta"><h3>Waterfall island kitchen</h3><span>6 photos · tap to view</span></div>
       </article>
       <article class="pf-group">
-        <div class="pf-mosaic"><button class="pf-tile pf-cover" data-g="3" data-i="0" aria-label="View photos of Retail store millwork"><img src="assets/work-retail.jpg" alt="Retail shelving with LED lighting" loading="lazy"></button><button class="pf-tile" data-g="3" data-i="1" aria-label="View photos of Retail store millwork"><img src="assets/work-retail-wide.jpg" alt="Retail space, wide view" loading="lazy"></button><button class="pf-tile" data-g="3" data-i="2" aria-label="View photos of Retail store millwork"><img src="assets/work-retail-front.jpg" alt="Retail shelving wall" loading="lazy"></button></div>
+        <div class="pf-mosaic"><button class="pf-tile pf-cover" data-g="3" data-i="0" aria-label="View photos of Retail store millwork"><img src="assets/work-retail.jpg" alt="Retail shelving with LED lighting" loading="lazy"></button><div class="pf-rail"><button class="pf-tile" data-g="3" data-i="1" aria-label="View photos of Retail store millwork"><img src="assets/work-retail-wide.jpg" alt="Retail space, wide view" loading="lazy"></button><button class="pf-tile" data-g="3" data-i="2" aria-label="View photos of Retail store millwork"><img src="assets/work-retail-front.jpg" alt="Retail shelving wall" loading="lazy"></button></div></div>
         <div class="pf-meta"><h3>Retail store millwork</h3><span>3 photos · tap to view</span></div>
       </article>
       <article class="pf-group">
-        <div class="pf-mosaic pf-single"><button class="pf-tile pf-cover" data-g="4" data-i="0" aria-label="View photos of White &amp; wood kitchen"><img src="assets/work-white-wood.jpg" alt="White cabinets, wood countertops" loading="lazy"></button></div>
+        <div class="pf-mosaic"><button class="pf-tile pf-cover" data-g="4" data-i="0" aria-label="View photos of White &amp; wood kitchen"><img src="assets/work-white-wood.jpg" alt="White cabinets, wood countertops" loading="lazy"></button></div>
         <div class="pf-meta"><h3>White &amp; wood kitchen</h3><span>1 photo · tap to view</span></div>
       </article>
       <article class="pf-group">
-        <div class="pf-mosaic pf-single"><button class="pf-tile pf-cover" data-g="5" data-i="0" aria-label="View photos of Grey shaker kitchen"><img src="assets/work-grey-shaker.jpg" alt="Grey shaker kitchen, double oven" loading="lazy"></button></div>
+        <div class="pf-mosaic"><button class="pf-tile pf-cover" data-g="5" data-i="0" aria-label="View photos of Grey shaker kitchen"><img src="assets/work-grey-shaker.jpg" alt="Grey shaker kitchen, double oven" loading="lazy"></button></div>
         <div class="pf-meta"><h3>Grey shaker kitchen</h3><span>1 photo · tap to view</span></div>
       </article>
       </div>
