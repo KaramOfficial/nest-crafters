@@ -1,0 +1,475 @@
+<!DOCTYPE html><html><head>
+    <meta charset="UTF-8">
+    
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@400;500;600&family=Mulish:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/logo-badge.jpg" sizes="96x96" />
+    
+    
+    <link rel="preload" as="image" href="assets/design-hero.webp" fetchpriority="high" />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@400;500;600&family=Mulish:wght@400;600;700&display=swap" rel="stylesheet">
+    <style data-inline-css="site">/*! tailwindcss v4.3.0 | MIT License | https://tailwindcss.com */@layer properties;@layer theme, base, components, utilities;@layer theme{:host,:root{--font-sans:ui-sans-serif,system-ui,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--font-mono:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;--color-white:#fff;--spacing:0.25rem;--text-sm:0.875rem;--text-sm--line-height:1.42857;--text-base:1rem;--text-base--line-height:1.5;--text-lg:1.125rem;--text-lg--line-height:1.55556;--font-weight-normal:400;--font-weight-medium:500;--font-weight-semibold:600;--leading-tight:1.25;--leading-relaxed:1.625;--radius-sm:0.25rem;--ease-out:cubic-bezier(0,0,0.2,1);--default-transition-duration:150ms;--default-transition-timing-function:cubic-bezier(0.4,0,0.2,1);--default-font-family:var(--font-sans);--default-mono-font-family:var(--font-mono)}}@layer base{*,::backdrop,::file-selector-button,:after,:before{border:0 solid;box-sizing:border-box;margin:0;padding:0}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;font-family:var(--default-font-family,ui-sans-serif,system-ui,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji");font-feature-settings:var(--default-font-feature-settings,normal);font-variation-settings:var(--default-font-variation-settings,normal);tab-size:4;-webkit-tap-highlight-color:transparent}hr{border-top-width:1px;color:inherit;height:0}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;-webkit-text-decoration:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:var(--default-mono-font-family,ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace);font-feature-settings:var(--default-mono-font-feature-settings,normal);font-size:1em;font-variation-settings:var(--default-mono-font-variation-settings,normal)}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{border-collapse:collapse;border-color:inherit;text-indent:0}:-moz-focusring{outline:auto}progress{vertical-align:baseline}summary{display:list-item}menu,ol,ul{list-style:none}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{height:auto;max-width:100%}::file-selector-button,button,input,optgroup,select,textarea{background-color:transparent;border-radius:0;color:inherit;font:inherit;font-feature-settings:inherit;font-variation-settings:inherit;letter-spacing:inherit;opacity:1}:where(select:is([multiple],[size])) optgroup{font-weight:bolder}:where(select:is([multiple],[size])) optgroup option{padding-inline-start:20px}::file-selector-button{margin-inline-end:4px}::placeholder{opacity:1}@supports (not (-webkit-appearance:-apple-pay-button)) or (contain-intrinsic-size:1px){::placeholder{color:currentcolor;@supports (color:color-mix(in lab,red,red)){color:color-mix(in oklab,currentcolor 50%,transparent)}}}textarea{resize:vertical}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-date-and-time-value{min-height:1lh;text-align:inherit}::-webkit-datetime-edit{display:inline-flex}::-webkit-datetime-edit-fields-wrapper{padding:0}::-webkit-datetime-edit,::-webkit-datetime-edit-day-field,::-webkit-datetime-edit-hour-field,::-webkit-datetime-edit-meridiem-field,::-webkit-datetime-edit-millisecond-field,::-webkit-datetime-edit-minute-field,::-webkit-datetime-edit-month-field,::-webkit-datetime-edit-second-field,::-webkit-datetime-edit-year-field{padding-block:0}::-webkit-calendar-picker-indicator{line-height:1}:-moz-ui-invalid{box-shadow:none}::file-selector-button,button,input:where([type=button],[type=reset],[type=submit]){appearance:button}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[hidden]:where(:not([hidden=until-found])){display:none!important}}@layer utilities{.sr-only{border-width:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;white-space:nowrap;width:1px}.absolute,.sr-only{position:absolute}.fixed{position:fixed}.relative{position:relative}.sticky{position:sticky}.inset-0{inset:calc(var(--spacing)*0)}.top-0{top:calc(var(--spacing)*0)}.top-4{top:calc(var(--spacing)*4)}.top-full{top:100%}.right-0{right:calc(var(--spacing)*0)}.bottom-0{bottom:calc(var(--spacing)*0)}.left-0{left:calc(var(--spacing)*0)}.left-4{left:calc(var(--spacing)*4)}.z-50{z-index:50}.z-\[100\]{z-index:100}.order-1{order:1}.order-2{order:2}.mx-auto{margin-inline:auto}.mt-0\.5{margin-top:calc(var(--spacing)*.5)}.mt-1{margin-top:calc(var(--spacing)*1)}.mt-2{margin-top:calc(var(--spacing)*2)}.mt-3{margin-top:calc(var(--spacing)*3)}.mt-4{margin-top:calc(var(--spacing)*4)}.mt-5{margin-top:calc(var(--spacing)*5)}.mt-6{margin-top:calc(var(--spacing)*6)}.mt-8{margin-top:calc(var(--spacing)*8)}.mt-10{margin-top:calc(var(--spacing)*10)}.mb-6{margin-bottom:calc(var(--spacing)*6)}.mb-10{margin-bottom:calc(var(--spacing)*10)}.ml-1{margin-left:calc(var(--spacing)*1)}.flex{display:flex}.grid{display:grid}.hidden{display:none}.inline-flex{display:inline-flex}.aspect-\[5\/4\]{aspect-ratio:5/4}.aspect-\[6\/5\]{aspect-ratio:6/5}.h-4{height:calc(var(--spacing)*4)}.h-5{height:calc(var(--spacing)*5)}.h-8{height:calc(var(--spacing)*8)}.h-9{height:calc(var(--spacing)*9)}.h-10{height:calc(var(--spacing)*10)}.h-11{height:calc(var(--spacing)*11)}.h-12{height:calc(var(--spacing)*12)}.h-\[86px\]{height:86px}.h-\[310px\]{height:310px}.h-full{height:100%}.h-px{height:1px}.min-h-12{min-height:calc(var(--spacing)*12)}.min-h-14{min-height:calc(var(--spacing)*14)}.min-h-\[96px\]{min-height:96px}.w-4{width:calc(var(--spacing)*4)}.w-5{width:calc(var(--spacing)*5)}.w-7{width:calc(var(--spacing)*7)}.w-8{width:calc(var(--spacing)*8)}.w-10{width:calc(var(--spacing)*10)}.w-11{width:calc(var(--spacing)*11)}.w-12{width:calc(var(--spacing)*12)}.w-full{width:100%}.max-w-\[320px\]{max-width:320px}.max-w-\[350px\]{max-width:350px}.max-w-\[390px\]{max-width:390px}.max-w-\[420px\]{max-width:420px}.max-w-\[430px\]{max-width:430px}.max-w-\[500px\]{max-width:500px}.max-w-\[570px\]{max-width:570px}.max-w-\[600px\]{max-width:600px}.max-w-\[730px\]{max-width:730px}.max-w-\[var\(--content-width\)\]{max-width:var(--content-width)}.min-w-0{min-width:calc(var(--spacing)*0)}.shrink-0{flex-shrink:0}.origin-left{transform-origin:0}.scale-x-0{--tw-scale-x:0%;scale:var(--tw-scale-x) var(--tw-scale-y)}.transform{transform:var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,)}.cursor-pointer{cursor:pointer}.resize{resize:both}.list-none{list-style-type:none}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-center{align-items:center}.items-end{align-items:flex-end}.items-start{align-items:flex-start}.justify-between{justify-content:space-between}.justify-center{justify-content:center}.gap-2{gap:calc(var(--spacing)*2)}.gap-3{gap:calc(var(--spacing)*3)}.gap-4{gap:calc(var(--spacing)*4)}.gap-5{gap:calc(var(--spacing)*5)}.gap-6{gap:calc(var(--spacing)*6)}.gap-7{gap:calc(var(--spacing)*7)}.gap-8{gap:calc(var(--spacing)*8)}.gap-9{gap:calc(var(--spacing)*9)}.gap-10{gap:calc(var(--spacing)*10)}.space-y-3{:where(&>:not(:last-child)){--tw-space-y-reverse:0;margin-block-end:calc(var(--spacing)*3*(1 - var(--tw-space-y-reverse)));margin-block-start:calc(var(--spacing)*3*var(--tw-space-y-reverse))}}.gap-x-6{column-gap:calc(var(--spacing)*6)}.gap-x-7{column-gap:calc(var(--spacing)*7)}.gap-y-2{row-gap:calc(var(--spacing)*2)}.gap-y-3{row-gap:calc(var(--spacing)*3)}.gap-y-4{row-gap:calc(var(--spacing)*4)}.overflow-hidden{overflow:hidden}.rounded-\[var\(--button-radius\)\]{border-radius:var(--button-radius)}.rounded-\[var\(--image-radius\)\]{border-radius:var(--image-radius)}.rounded-full{border-radius:calc(infinity*1px)}.border{border-style:var(--tw-border-style);border-width:1px}.border-y{border-block-style:var(--tw-border-style);border-block-width:1px}.border-t{border-top-style:var(--tw-border-style);border-top-width:1px}.border-b{border-bottom-style:var(--tw-border-style);border-bottom-width:1px}.border-\[var\(--line\)\]{border-color:var(--line)}.border-\[var\(--teal\)\]{border-color:var(--teal)}.border-\[var\(--teal\)\]\/20{border-color:var(--teal);@supports (color:color-mix(in lab,red,red)){border-color:color-mix(in oklab,var(--teal) 20%,transparent)}}.bg-\[var\(--aqua\)\]{background-color:var(--aqua)}.bg-\[var\(--aqua-light\)\]{background-color:var(--aqua-light)}.bg-\[var\(--ink\)\]{background-color:var(--ink)}.bg-\[var\(--line\)\]{background-color:var(--line)}.bg-\[var\(--paper\)\]{background-color:var(--paper)}.bg-\[var\(--teal\)\]{background-color:var(--teal)}.bg-\[var\(--wood-wash\)\]{background-color:var(--wood-wash)}.object-cover{object-fit:cover}.object-center{object-position:center}.px-5{padding-inline:calc(var(--spacing)*5)}.px-6{padding-inline:calc(var(--spacing)*6)}.px-\[var\(--page-gutter\)\]{padding-inline:var(--page-gutter)}.py-3{padding-block:calc(var(--spacing)*3)}.py-3\.5{padding-block:calc(var(--spacing)*3.5)}.py-4{padding-block:calc(var(--spacing)*4)}.py-6{padding-block:calc(var(--spacing)*6)}.py-\[var\(--section-space\)\]{padding-block:var(--section-space)}.pt-0\.5{padding-top:calc(var(--spacing)*.5)}.pt-2{padding-top:calc(var(--spacing)*2)}.pt-3{padding-top:calc(var(--spacing)*3)}.pt-4{padding-top:calc(var(--spacing)*4)}.pt-5{padding-top:calc(var(--spacing)*5)}.pt-10{padding-top:calc(var(--spacing)*10)}.pt-12{padding-top:calc(var(--spacing)*12)}.pr-4{padding-right:calc(var(--spacing)*4)}.pr-8{padding-right:calc(var(--spacing)*8)}.pb-2{padding-bottom:calc(var(--spacing)*2)}.pb-6{padding-bottom:calc(var(--spacing)*6)}.pb-7{padding-bottom:calc(var(--spacing)*7)}.pb-9{padding-bottom:calc(var(--spacing)*9)}.text-center{text-align:center}.font-\[family-name\:var\(--font-body\)\]{font-family:var(--font-body)}.font-\[family-name\:var\(--font-heading\)\]{font-family:var(--font-heading)}.font-\[family-name\:var\(--font-ui\)\]{font-family:var(--font-ui)}.text-lg{font-size:var(--text-lg);line-height:var(--tw-leading,var(--text-lg--line-height))}.text-sm{font-size:var(--text-sm);line-height:var(--tw-leading,var(--text-sm--line-height))}.text-\[8px\]{font-size:8px}.text-\[9px\]{font-size:9px}.text-\[11px\]{font-size:11px}.text-\[12px\]{font-size:12px}.text-\[13px\]{font-size:13px}.text-\[14px\]{font-size:14px}.text-\[15px\]{font-size:15px}.text-\[16px\]{font-size:16px}.text-\[18px\]{font-size:18px}.text-\[19px\]{font-size:19px}.text-\[21px\]{font-size:21px}.text-\[22px\]{font-size:22px}.text-\[23px\]{font-size:23px}.text-\[28px\]{font-size:28px}.text-\[clamp\(2\.75rem\,4\.2vw\,4rem\)\]{font-size:clamp(2.75rem,4.2vw,4rem)}.text-\[clamp\(2\.75rem\,4\.4vw\,4\.25rem\)\]{font-size:clamp(2.75rem,4.4vw,4.25rem)}.text-\[clamp\(2\.75rem\,4\.6vw\,4\.5rem\)\]{font-size:clamp(2.75rem,4.6vw,4.5rem)}.text-\[clamp\(3\.5rem\,6\.7vw\,6\.5rem\)\]{font-size:clamp(3.5rem,6.7vw,6.5rem)}.text-\[clamp\(3rem\,5\.4vw\,5\.25rem\)\]{font-size:clamp(3rem,5.4vw,5.25rem)}.leading-\[0\.98\]{--tw-leading:0.98;line-height:.98}.leading-\[1\.02\]{--tw-leading:1.02;line-height:1.02}.leading-\[1\.04\]{--tw-leading:1.04;line-height:1.04}.leading-\[1\.06\]{--tw-leading:1.06;line-height:1.06}.leading-\[1\.8\]{--tw-leading:1.8;line-height:1.8}.leading-\[1\.85\]{--tw-leading:1.85;line-height:1.85}.leading-none{--tw-leading:1;line-height:1}.leading-relaxed{--tw-leading:var(--leading-relaxed);line-height:var(--leading-relaxed)}.leading-tight{--tw-leading:var(--leading-tight);line-height:var(--leading-tight)}.font-medium{--tw-font-weight:var(--font-weight-medium);font-weight:var(--font-weight-medium)}.font-normal{--tw-font-weight:var(--font-weight-normal);font-weight:var(--font-weight-normal)}.font-semibold{--tw-font-weight:var(--font-weight-semibold);font-weight:var(--font-weight-semibold)}.tracking-\[-0\.03em\]{--tw-tracking:-0.03em;letter-spacing:-.03em}.tracking-\[-0\.025em\]{--tw-tracking:-0.025em;letter-spacing:-.025em}.tracking-\[-0\.035em\]{--tw-tracking:-0.035em;letter-spacing:-.035em}.tracking-\[0\.13em\]{--tw-tracking:0.13em;letter-spacing:.13em}.tracking-\[0\.015em\]{--tw-tracking:0.015em;letter-spacing:.015em}.tracking-\[0\.16em\]{--tw-tracking:0.16em;letter-spacing:.16em}.text-\[var\(--body\)\]{color:var(--body)}.text-\[var\(--ink\)\]{color:var(--ink)}.text-\[var\(--muted\)\]{color:var(--muted)}.text-\[var\(--teal\)\]{color:var(--teal)}.text-white{color:var(--color-white)}.underline{text-decoration-line:underline}.decoration-\[var\(--line\)\]{text-decoration-color:var(--line)}.decoration-\[var\(--teal\)\]{text-decoration-color:var(--teal)}.underline-offset-4{text-underline-offset:4px}.underline-offset-8{text-underline-offset:8px}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.shadow-\[var\(--soft-shadow\)\]{--tw-shadow:var(--soft-shadow);box-shadow:var(--tw-inset-shadow),var(--tw-inset-ring-shadow),var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow)}.transition-colors{transition-duration:var(--tw-duration,var(--default-transition-duration));transition-property:color,background-color,border-color,outline-color,text-decoration-color,fill,stroke,--tw-gradient-from,--tw-gradient-via,--tw-gradient-to;transition-timing-function:var(--tw-ease,var(--default-transition-timing-function))}.transition-transform{transition-duration:var(--tw-duration,var(--default-transition-duration));transition-property:transform,translate,scale,rotate;transition-timing-function:var(--tw-ease,var(--default-transition-timing-function))}.duration-200{--tw-duration:200ms;transition-duration:.2s}.duration-700{--tw-duration:700ms;transition-duration:.7s}.ease-out{--tw-ease:var(--ease-out);transition-timing-function:var(--ease-out)}.group-open\:block{&:is(:where(.group):is([open],:popover-open,:open) *){display:block}}.group-open\:hidden{&:is(:where(.group):is([open],:popover-open,:open) *){display:none}}.group-open\:rotate-45{&:is(:where(.group):is([open],:popover-open,:open) *){rotate:45deg}}.group-open\:border-\[var\(--teal\)\]{&:is(:where(.group):is([open],:popover-open,:open) *){border-color:var(--teal)}}.group-open\:bg-\[var\(--teal\)\]{&:is(:where(.group):is([open],:popover-open,:open) *){background-color:var(--teal)}}.group-open\:text-white{&:is(:where(.group):is([open],:popover-open,:open) *){color:var(--color-white)}}.group-hover\:translate-x-0\.5{&:is(:where(.group):hover *){@media (hover:hover){--tw-translate-x:calc(var(--spacing)*0.5);translate:var(--tw-translate-x) var(--tw-translate-y)}}}.group-hover\:translate-x-1{&:is(:where(.group):hover *){@media (hover:hover){--tw-translate-x:calc(var(--spacing)*1);translate:var(--tw-translate-x) var(--tw-translate-y)}}}.group-hover\:-translate-y-0\.5{&:is(:where(.group):hover *){@media (hover:hover){--tw-translate-y:calc(var(--spacing)*-0.5);translate:var(--tw-translate-x) var(--tw-translate-y)}}}.group-hover\:scale-\[1\.015\]{&:is(:where(.group):hover *){@media (hover:hover){scale:1.015}}}.selection\:bg-\[var\(--aqua\)\]{& ::selection{background-color:var(--aqua)}&::selection{background-color:var(--aqua)}}.selection\:text-\[var\(--ink\)\]{& ::selection{color:var(--ink)}&::selection{color:var(--ink)}}.hover\:bg-\[var\(--teal\)\]{&:hover{@media (hover:hover){background-color:var(--teal)}}}.hover\:bg-\[var\(--teal-dark\)\]{&:hover{@media (hover:hover){background-color:var(--teal-dark)}}}.hover\:text-\[var\(--teal\)\]{&:hover{@media (hover:hover){color:var(--teal)}}}.hover\:text-white{&:hover{@media (hover:hover){color:var(--color-white)}}}.hover\:underline{&:hover{@media (hover:hover){text-decoration-line:underline}}}.hover\:decoration-\[var\(--teal\)\]{&:hover{@media (hover:hover){text-decoration-color:var(--teal)}}}.focus\:not-sr-only{&:focus{clip-path:none;height:auto;margin:0;overflow:visible;padding:0;position:static;white-space:normal;width:auto}}.focus-visible\:rounded-sm{&:focus-visible{border-radius:var(--radius-sm)}}.focus-visible\:outline-2{&:focus-visible{outline-style:var(--tw-outline-style);outline-width:2px}}.focus-visible\:outline-offset-4{&:focus-visible{outline-offset:4px}}.focus-visible\:outline-\[var\(--teal\)\]{&:focus-visible{outline-color:var(--teal)}}.motion-reduce\:transform-none{@media (prefers-reduced-motion:reduce){transform:none}}.motion-reduce\:transition-none{@media (prefers-reduced-motion:reduce){transition-property:none}}.min-\[360px\]\:h-12{@media (width >= 360px){height:calc(var(--spacing)*12)}}.min-\[360px\]\:w-12{@media (width >= 360px){width:calc(var(--spacing)*12)}}.min-\[360px\]\:gap-3{@media (width >= 360px){gap:calc(var(--spacing)*3)}}.min-\[360px\]\:text-\[9px\]{@media (width >= 360px){font-size:9px}}.min-\[360px\]\:text-\[18px\]{@media (width >= 360px){font-size:18px}}.sm\:h-\[410px\]{@media (width >= 40rem){height:410px}}.sm\:w-auto{@media (width >= 40rem){width:auto}}.md\:mb-12{@media (width >= 48rem){margin-bottom:calc(var(--spacing)*12)}}.md\:flex-row{@media (width >= 48rem){flex-direction:row}}.md\:items-center{@media (width >= 48rem){align-items:center}}.md\:items-start{@media (width >= 48rem){align-items:flex-start}}.md\:pt-14{@media (width >= 48rem){padding-top:calc(var(--spacing)*14)}}.md\:pt-16{@media (width >= 48rem){padding-top:calc(var(--spacing)*16)}}.md\:pb-11{@media (width >= 48rem){padding-bottom:calc(var(--spacing)*11)}}.md\:text-base{@media (width >= 48rem){font-size:var(--text-base);line-height:var(--tw-leading,var(--text-base--line-height))}}.md\:text-\[13px\]{@media (width >= 48rem){font-size:13px}}.md\:text-\[25px\]{@media (width >= 48rem){font-size:25px}}.lg\:order-1{@media (width >= 64rem){order:1}}.lg\:order-2{@media (width >= 64rem){order:2}}.lg\:flex{@media (width >= 64rem){display:flex}}.lg\:hidden{@media (width >= 64rem){display:none}}.lg\:aspect-\[1\/1\.08\]{@media (width >= 64rem){aspect-ratio:1/1.08}}.lg\:aspect-\[4\/5\]{@media (width >= 64rem){aspect-ratio:4/5}}.lg\:h-14{@media (width >= 64rem){height:calc(var(--spacing)*14)}}.lg\:h-\[98px\]{@media (width >= 64rem){height:98px}}.lg\:h-\[480px\]{@media (width >= 64rem){height:480px}}.lg\:w-14{@media (width >= 64rem){width:calc(var(--spacing)*14)}}.lg\:grid-cols-\[0\.8fr_1\.2fr\]{@media (width >= 64rem){grid-template-columns:.8fr 1.2fr}}.lg\:grid-cols-\[0\.9fr_1\.1fr\]{@media (width >= 64rem){grid-template-columns:.9fr 1.1fr}}.lg\:grid-cols-\[0\.85fr_1\.15fr\]{@media (width >= 64rem){grid-template-columns:.85fr 1.15fr}}.lg\:grid-cols-\[1\.15fr_0\.85fr\]{@media (width >= 64rem){grid-template-columns:1.15fr .85fr}}.lg\:grid-cols-\[1\.35fr_0\.75fr\]{@media (width >= 64rem){grid-template-columns:1.35fr .75fr}}.lg\:gap-16{@media (width >= 64rem){gap:calc(var(--spacing)*16)}}.lg\:gap-20{@media (width >= 64rem){gap:calc(var(--spacing)*20)}}.lg\:border-l{@media (width >= 64rem){border-left-style:var(--tw-border-style);border-left-width:1px}}.lg\:border-\[var\(--line\)\]{@media (width >= 64rem){border-color:var(--line)}}.lg\:pt-16{@media (width >= 64rem){padding-top:calc(var(--spacing)*16)}}.lg\:pb-1{@media (width >= 64rem){padding-bottom:calc(var(--spacing)*1)}}.lg\:pl-12{@media (width >= 64rem){padding-left:calc(var(--spacing)*12)}}.lg\:text-\[10px\]{@media (width >= 64rem){font-size:10px}}.lg\:text-\[21px\]{@media (width >= 64rem){font-size:21px}}.xl\:h-\[530px\]{@media (width >= 80rem){height:530px}}.xl\:gap-10{@media (width >= 80rem){gap:calc(var(--spacing)*10)}}.xl\:gap-20{@media (width >= 80rem){gap:calc(var(--spacing)*20)}}.xl\:gap-28{@media (width >= 80rem){gap:calc(var(--spacing)*28)}}.xl\:pl-16{@media (width >= 80rem){padding-left:calc(var(--spacing)*16)}}}@property --tw-animation-delay{syntax:"*";inherits:false;initial-value:0s}@property --tw-animation-direction{syntax:"*";inherits:false;initial-value:normal}@property --tw-animation-duration{syntax:"*";inherits:false}@property --tw-animation-fill-mode{syntax:"*";inherits:false;initial-value:none}@property --tw-animation-iteration-count{syntax:"*";inherits:false;initial-value:1}@property --tw-enter-opacity{syntax:"*";inherits:false;initial-value:1}@property --tw-enter-rotate{syntax:"*";inherits:false;initial-value:0}@property --tw-enter-scale{syntax:"*";inherits:false;initial-value:1}@property --tw-enter-translate-x{syntax:"*";inherits:false;initial-value:0}@property --tw-enter-translate-y{syntax:"*";inherits:false;initial-value:0}@property --tw-exit-opacity{syntax:"*";inherits:false;initial-value:1}@property --tw-exit-rotate{syntax:"*";inherits:false;initial-value:0}@property --tw-exit-scale{syntax:"*";inherits:false;initial-value:1}@property --tw-exit-translate-x{syntax:"*";inherits:false;initial-value:0}@property --tw-exit-translate-y{syntax:"*";inherits:false;initial-value:0}@property --tw-scale-x{syntax:"*";inherits:false;initial-value:1}@property --tw-scale-y{syntax:"*";inherits:false;initial-value:1}@property --tw-scale-z{syntax:"*";inherits:false;initial-value:1}@property --tw-rotate-x{syntax:"*";inherits:false}@property --tw-rotate-y{syntax:"*";inherits:false}@property --tw-rotate-z{syntax:"*";inherits:false}@property --tw-skew-x{syntax:"*";inherits:false}@property --tw-skew-y{syntax:"*";inherits:false}@property --tw-space-y-reverse{syntax:"*";inherits:false;initial-value:0}@property --tw-border-style{syntax:"*";inherits:false;initial-value:solid}@property --tw-leading{syntax:"*";inherits:false}@property --tw-font-weight{syntax:"*";inherits:false}@property --tw-tracking{syntax:"*";inherits:false}@property --tw-shadow{syntax:"*";inherits:false;initial-value:0 0 #0000}@property --tw-shadow-color{syntax:"*";inherits:false}@property --tw-shadow-alpha{syntax:"<percentage>";inherits:false;initial-value:100%}@property --tw-inset-shadow{syntax:"*";inherits:false;initial-value:0 0 #0000}@property --tw-inset-shadow-color{syntax:"*";inherits:false}@property --tw-inset-shadow-alpha{syntax:"<percentage>";inherits:false;initial-value:100%}@property --tw-ring-color{syntax:"*";inherits:false}@property --tw-ring-shadow{syntax:"*";inherits:false;initial-value:0 0 #0000}@property --tw-inset-ring-color{syntax:"*";inherits:false}@property --tw-inset-ring-shadow{syntax:"*";inherits:false;initial-value:0 0 #0000}@property --tw-ring-inset{syntax:"*";inherits:false}@property --tw-ring-offset-width{syntax:"<length>";inherits:false;initial-value:0}@property --tw-ring-offset-color{syntax:"*";inherits:false;initial-value:#fff}@property --tw-ring-offset-shadow{syntax:"*";inherits:false;initial-value:0 0 #0000}@property --tw-duration{syntax:"*";inherits:false}@property --tw-ease{syntax:"*";inherits:false}@property --tw-translate-x{syntax:"*";inherits:false;initial-value:0}@property --tw-translate-y{syntax:"*";inherits:false;initial-value:0}@property --tw-translate-z{syntax:"*";inherits:false;initial-value:0}@property --tw-outline-style{syntax:"*";inherits:false;initial-value:solid}@layer properties{@supports ((-webkit-hyphens:none) and (not (margin-trim:inline))) or ((-moz-orient:inline) and (not (color:rgb(from red r g b)))){*,::backdrop,:after,:before{--tw-scale-x:1;--tw-scale-y:1;--tw-scale-z:1;--tw-rotate-x:initial;--tw-rotate-y:initial;--tw-rotate-z:initial;--tw-skew-x:initial;--tw-skew-y:initial;--tw-space-y-reverse:0;--tw-border-style:solid;--tw-leading:initial;--tw-font-weight:initial;--tw-tracking:initial;--tw-shadow:0 0 #0000;--tw-shadow-color:initial;--tw-shadow-alpha:100%;--tw-inset-shadow:0 0 #0000;--tw-inset-shadow-color:initial;--tw-inset-shadow-alpha:100%;--tw-ring-color:initial;--tw-ring-shadow:0 0 #0000;--tw-inset-ring-color:initial;--tw-inset-ring-shadow:0 0 #0000;--tw-ring-inset:initial;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-offset-shadow:0 0 #0000;--tw-duration:initial;--tw-ease:initial;--tw-translate-x:0;--tw-translate-y:0;--tw-translate-z:0;--tw-outline-style:solid;--tw-animation-delay:0s;--tw-animation-direction:normal;--tw-animation-duration:initial;--tw-animation-fill-mode:none;--tw-animation-iteration-count:1;--tw-enter-opacity:1;--tw-enter-rotate:0;--tw-enter-scale:1;--tw-enter-translate-x:0;--tw-enter-translate-y:0;--tw-exit-opacity:1;--tw-exit-rotate:0;--tw-exit-scale:1;--tw-exit-translate-x:0;--tw-exit-translate-y:0}}}</style>
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css"></noscript>
+    
+    
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fcfdfb">
+  <title>Custom Kitchens &amp; Cabinetry in Surrey | Nest Crafters</title>
+  <meta name="description" content="Custom kitchen cabinetry, renovations, closets, built-ins and commercial millwork. Nest Crafters serves Surrey, Vancouver and the Lower Mainland, from design to installation. Request a free consultation.">
+  <link rel="canonical" href="https://karamofficial.github.io/nest-crafters/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Nest Crafters | Your kitchen. Made around you.">
+  <meta property="og:description" content="Thoughtful custom cabinetry and kitchen renovations, from concept to installation. Serving Surrey, Vancouver and the Lower Mainland.">
+  <meta property="og:locale" content="en_CA">
+
+  <style data-bp-design-tokens="">
+    :root {
+      --paper: #fcfdfb;
+      --white: #ffffff;
+      --ink: #263d35;
+      --body: #4f6159;
+      --muted: #65756d;
+      --teal: #286e60;
+      --teal-dark: #1d564b;
+      --aqua: #eaf2ee;
+      --aqua-light: #f2f6f3;
+      --line: #d6e0d9;
+      --wood-wash: #eeece5;
+      --button-radius: 999px;
+      --image-radius: 3px;
+      --soft-shadow: 0 14px 35px rgb(38 61 53 / 8%);
+      --page-gutter: clamp(1.25rem, 4.4vw, 4.75rem);
+      --section-space: clamp(4.5rem, 7.5vw, 7.5rem);
+      --content-width: 1440px;
+      --font-heading: "Cormorant Garamond", Georgia, serif;
+      --font-ui: "Jost", sans-serif;
+      --font-body: "Mulish", sans-serif;
+    }
+    html {
+      scroll-padding-top: 86px;
+    }
+    @media (min-width: 1024px) {
+      html {
+        scroll-padding-top: 98px;
+      }
+    }
+  </style>
+  
+  <meta name="robots" content="noindex, nofollow, noarchive" /><style>
+.pf-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:26px}
+@media(max-width:760px){.pf-grid{grid-template-columns:1fr}}
+.pf-group{background:#fff;border:1px solid var(--line);border-radius:6px;overflow:hidden;box-shadow:var(--soft-shadow);transition:transform .3s ease}
+.pf-group:hover{transform:translateY(-4px)}
+.pf-mosaic{display:flex;gap:4px;height:320px;background:var(--aqua)}
+@media(max-width:480px){.pf-mosaic{height:250px}}
+.pf-cover{flex:1.65;min-width:0}
+.pf-rail{display:flex;flex-direction:column;gap:4px;flex:1;min-width:0}
+.pf-rail .pf-tile{flex:1;min-height:0}
+.pf-tile{position:relative;border:none;padding:0;cursor:zoom-in;overflow:hidden;background:var(--aqua-light);display:block;width:100%}
+.pf-tile img{width:100%;height:100%;object-fit:cover;transition:transform .45s ease}
+.pf-group:hover .pf-cover img{transform:scale(1.05)}
+.pf-group:hover .pf-rail .pf-tile:nth-child(1) img{transform:scale(1.08) rotate(-1deg)}
+.pf-group:hover .pf-rail .pf-tile:nth-child(2) img{transform:scale(1.08) rotate(1deg)}
+.pf-group:hover .pf-rail .pf-tile:nth-child(3) img{transform:scale(1.08) rotate(-.6deg)}
+.pf-more{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(28,46,40,.55);color:#fff;font-family:var(--font-ui);font-size:15px;font-weight:500;letter-spacing:.05em}
+.pf-meta{display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding:16px 18px 18px}
+.pf-meta h3{font-family:var(--font-heading);font-size:25px;font-weight:500;color:var(--ink);line-height:1.1}
+.pf-meta span{font-family:var(--font-ui);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);white-space:nowrap}
+.pflb{position:fixed;inset:0;background:rgba(20,34,29,.95);z-index:200;display:none;align-items:center;justify-content:center;flex-direction:column;padding:18px}
+.pflb.open{display:flex}
+.pflb img{max-width:100%;max-height:80vh;border-radius:3px;object-fit:contain}
+.pflb .cap{color:#fff;margin-top:14px;font-family:var(--font-ui);font-size:14.5px;letter-spacing:.03em;text-align:center}
+.pflb .x{position:absolute;top:14px;right:18px;background:none;border:none;color:#fff;font-size:34px;cursor:pointer;line-height:1}
+.pflb .nav{position:absolute;top:50%;transform:translateY(-50%);background:rgba(255,255,255,.14);border:none;color:#fff;width:44px;height:44px;border-radius:50%;font-size:22px;cursor:pointer}
+.pflb .prev{left:12px}.pflb .next{right:12px}
+</style>
+<style>
+:root{--ink:#1a2a33;--body:#43565e;--muted:#61747c;--teal:#0a6e66;--teal-dark:#075049;--paper:#fafaf7;--aqua:#e8f0ee;--aqua-light:#eff5f3;--line:#cfddd8}
+.heroX{position:relative;padding:64px 20px 0;text-align:center;background:radial-gradient(640px 340px at 50% 150px,#e9f1ee 0%,rgba(233,241,238,0) 65%),var(--paper);overflow:hidden}
+.heroX .lring{position:relative;width:min(290px,62vw);margin:6px auto 0}
+.heroX .lring::before{content:"";position:absolute;inset:-15px;border:1px solid #b9cdc6;border-radius:50%}
+.heroX .lring::after{content:"";position:absolute;inset:-30px;border:1px dashed #c8d8d2;border-radius:50%}
+.heroX .lring img{width:100%;border-radius:50%;display:block}
+.heroX .est{margin-top:44px;font-family:var(--font-ui);font-size:12px;font-weight:500;letter-spacing:.34em;text-transform:uppercase;color:#33545f}
+.heroX h1{margin-top:14px;font-family:var(--font-heading);font-weight:500;font-size:clamp(3.1rem,7.2vw,5.8rem);line-height:.99;letter-spacing:-.03em;color:var(--ink)}
+.heroX h1 em{font-style:italic;color:#0a6e66}
+.heroX .sub{margin:20px auto 0;max-width:520px;font-size:16.5px;line-height:1.65;color:var(--body)}
+.heroX .row{margin-top:26px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.heroX .call{margin-top:16px;font-family:var(--font-ui);font-size:13.5px;letter-spacing:.015em;color:var(--muted)}
+.heroX .call a{color:var(--teal);font-weight:500;text-decoration:underline;text-underline-offset:4px;text-decoration-color:#b9cdc6}
+.heroX .nest{display:block;width:min(880px,94vw);margin:38px auto 0}
+.heroX .photo{width:min(1240px,94vw);margin:26px auto 0;display:block}
+.heroX .photo img{width:100%;height:min(62vh,540px);object-fit:cover;border-radius:3px;box-shadow:0 14px 35px rgb(26 42 51 / 10%)}
+@media(max-width:560px){.heroX{padding-top:44px}.heroX .est{letter-spacing:.24em}}
+</style>
+<style>.btn-x{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:13px 26px;border-radius:999px;font-family:var(--font-ui);font-size:15px;font-weight:500;letter-spacing:.015em;text-decoration:none;border:1px solid transparent;transition:background .18s ease,color .18s ease}.btn-solid{background:var(--teal);color:#fff}.btn-solid:hover{background:var(--teal-dark)}.btn-line{background:transparent;color:var(--teal);border-color:var(--teal)}.btn-line:hover{background:var(--teal);color:#fff}</style>
+</head>
+<body id="top" class="bg-[var(--paper)] font-[family-name:var(--font-body)] text-[var(--body)] antialiased selection:bg-[var(--aqua)] selection:text-[var(--ink)]">
+  <a href="#main" class="sr-only fixed left-4 top-4 z-[100] rounded-[var(--button-radius)] bg-[var(--ink)] px-6 py-3 text-white focus:not-sr-only">Skip to content</a>
+
+  <header class="sticky top-0 z-50 bg-[var(--paper)]">
+    <div class="mx-auto flex h-[86px] max-w-[var(--content-width)] items-center justify-between gap-5 px-[var(--page-gutter)] lg:h-[98px]">
+      <a href="#top" aria-label="Nest Crafters home" class="flex shrink-0 items-center gap-2 text-[var(--ink)] min-[360px]:gap-3 focus-visible:rounded-sm focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--teal)]">
+        <img src="assets/logo-badge.jpg" alt="Nest Crafters logo" class="h-10 w-10 shrink-0 rounded-full object-cover min-[360px]:h-12 min-[360px]:w-12 lg:h-14 lg:w-14">
+        <span class="flex flex-col">
+          <span class="font-[family-name:var(--font-ui)] text-[16px] font-medium leading-tight tracking-[0.13em] min-[360px]:text-[18px] lg:text-[21px]">NEST CRAFTERS</span>
+          <span class="mt-1 font-[family-name:var(--font-ui)] text-[8px] tracking-[0.16em] min-[360px]:text-[9px] lg:text-[10px]">HOME &amp; KITCHEN DESIGNS</span>
+        </span>
+      </a>
+
+      <nav aria-label="Main navigation" class="hidden items-center gap-8 font-[family-name:var(--font-ui)] text-[15px] text-[var(--ink)] lg:flex xl:gap-10">
+        <a href="#work" class="decoration-[var(--teal)] underline-offset-8 transition-colors hover:text-[var(--teal)] hover:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--teal)]">Our Work</a><a href="#services" class="decoration-[var(--teal)] underline-offset-8 transition-colors hover:text-[var(--teal)] hover:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--teal)]">What we do</a>
+        <a href="#approach" class="decoration-[var(--teal)] underline-offset-8 transition-colors hover:text-[var(--teal)] hover:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--teal)]">Our approach</a>
+        <a href="#questions" class="decoration-[var(--teal)] underline-offset-8 transition-colors hover:text-[var(--teal)] hover:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--teal)]">FAQs</a>
+        <a href="#contact" class="group inline-flex items-center gap-6 rounded-[var(--button-radius)] border border-[var(--teal)] px-6 py-3 text-[var(--teal)] transition-colors hover:bg-[var(--teal)] hover:text-white focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--teal)]">
+          Get a free quote
+          <svg viewBox="0 0 24 24" class="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 motion-reduce:transform-none" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"></path></svg>
+        </a>
+      </nav>
+
+      <details id="mobile-menu" class="group lg:hidden">
+        <summary aria-label="Open navigation menu" class="flex h-11 w-11 cursor-pointer list-none items-center justify-center rounded-full border border-[var(--line)] text-[var(--ink)] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--teal)] [&amp;::-webkit-details-marker]:hidden">
+          <svg viewBox="0 0 24 24" class="h-5 w-5 group-open:hidden" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 8h16M4 16h16"></path></svg>
+          <svg viewBox="0 0 24 24" class="hidden h-5 w-5 group-open:block" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="m6 6 12 12M6 18 18 6"></path></svg>
+        </summary>
+        <nav aria-label="Mobile navigation" class="absolute left-0 right-0 top-full flex flex-col border-b border-[var(--line)] bg-[var(--paper)] px-[var(--page-gutter)] pb-7 pt-3 font-[family-name:var(--font-ui)] text-lg shadow-[var(--soft-shadow)]">
+          <a href="#services" class="border-b border-[var(--line)] py-4 text-[var(--ink)] focus-visible:outline-2 focus-visible:outline-[var(--teal)]">What we do</a>
+          <a href="#approach" class="border-b border-[var(--line)] py-4 text-[var(--ink)] focus-visible:outline-2 focus-visible:outline-[var(--teal)]">Our approach</a>
+          <a href="#questions" class="py-4 text-[var(--ink)] focus-visible:outline-2 focus-visible:outline-[var(--teal)]">FAQs</a>
+          <a href="#contact" class="mt-3 rounded-[var(--button-radius)] bg-[var(--teal)] px-6 py-3 text-center text-white focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--teal)]">Get a free quote</a>
+        </nav>
+      </details>
+    </div>
+    <div aria-hidden="true" class="absolute bottom-0 left-0 h-px w-full bg-[var(--line)]">
+      <div id="reading-progress" class="h-full w-full origin-left scale-x-0 bg-[var(--teal)]"></div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section aria-labelledby="hero-heading" class="heroX">
+  <div class="lring"><img src="assets/logo-badge.jpg" alt="Nest Crafters logo — a house resting in a nest" fetchpriority="high"></div>
+  <div class="est">Home &amp; Kitchen Designs Ltd</div>
+  <h1 id="hero-heading">Your kitchen.<br><em>made around you.</em></h1>
+  <p class="sub">Custom cabinetry, kitchen renovations and thoughtful storage — designed for your space, from the first ideas to the final installation.</p>
+  <div class="row">
+    <a href="#contact" class="btn-x btn-solid">Start with a free consultation</a>
+    <a href="#work" class="btn-x btn-line">See our work</a>
+  </div>
+  <p class="call">or call us at <a href="tel:+12368805484">+1 (236) 880-5484</a> · Surrey, Vancouver &amp; the Lower Mainland</p>
+  <svg class="nest" viewBox="0 0 1200 90" fill="none" aria-hidden="true">
+    <path d="M60 20 C 360 95, 840 95, 1140 20" stroke="#1a2a33" stroke-width="3" stroke-linecap="round"/>
+    <path d="M210 8 C 450 78, 760 78, 1000 10" stroke="#1a2a33" stroke-width="3" stroke-linecap="round" opacity=".75"/>
+    <path d="M390 62 C 560 92, 680 90, 830 58" stroke="#1a2a33" stroke-width="3" stroke-linecap="round" opacity=".5"/>
+    <path d="M150 44 q 22 -4 30 14 q -22 4 -30 -14Z" fill="#0a6e66"/>
+    <path d="M1030 40 q 22 -4 30 14 q -22 4 -30 -14Z" fill="#0a6e66"/>
+    <path d="M585 74 q 20 -5 28 12 q -20 5 -28 -12Z" fill="#0a6e66" opacity=".85"/>
+  </svg>
+  <figure class="photo"><img src="assets/design-hero.webp" alt="Bright kitchen with warm oak cabinetry and a generous stone island"></figure>
+</section>
+
+    <section id="services" aria-labelledby="services-heading" class="mx-auto max-w-[var(--content-width)] px-[var(--page-gutter)] py-[var(--section-space)]">
+      <div class="mb-10 max-w-[730px] md:mb-12">
+        <h2 id="services-heading" class="font-[family-name:var(--font-heading)] text-[clamp(2.75rem,4.6vw,4.5rem)] font-medium leading-[1.04] tracking-[-0.025em] text-[var(--ink)]">Made to fit your space.</h2>
+        <p class="mt-5 max-w-[600px] text-[15px] leading-[1.85] md:text-base">A kitchen that works better. Storage where you need it. A place that feels like you. We create custom cabinetry and millwork for homes and businesses, with style and function considered together.</p>
+      </div>
+
+      <div class="grid items-start gap-9 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16 xl:gap-20">
+        <div class="border-t border-[var(--line)]">
+          <details name="services" data-service="kitchen" data-caption="Kitchen inspiration · Warm oak &amp; timeless cabinetry" class="group border-b border-[var(--line)]" open="">
+            <summary class="flex min-h-[96px] cursor-pointer list-none items-center justify-between gap-4 py-6 font-[family-name:var(--font-ui)] text-[22px] leading-tight text-[var(--ink)] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--teal)] md:text-[25px] [&amp;::-webkit-details-marker]:hidden">
+              Kitchens &amp; renovations
+              <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-[var(--line)] text-[var(--teal)] transition-colors group-open:border-[var(--teal)] group-open:bg-[var(--teal)] group-open:text-white">
+                <svg viewBox="0 0 20 20" class="h-4 w-4 transition-transform duration-200 group-open:rotate-45 motion-reduce:transition-none" fill="none" stroke="currentColor" stroke-width="1.25" aria-hidden="true"><path d="M4 10h12M10 4v12"></path></svg>
+              </span>
+            </summary>
+            <div class="pb-7 pr-4">
+              <p class="max-w-[430px] text-[15px] leading-[1.85]">From a fresh layout to cabinetry designed just for you, we bring your kitchen ideas together. Modern and streamlined or warm and classic, your kitchen should feel right for your home.</p>
+              <p class="mt-5 font-[family-name:var(--font-ui)] text-[13px] leading-relaxed text-[var(--teal)]">Custom kitchen cabinets · Kitchen renovations · Installation</p>
+              <a href="#contact" class="mt-5 inline-flex items-center gap-3 font-[family-name:var(--font-ui)] text-sm text-[var(--ink)] underline decoration-[var(--line)] underline-offset-4 hover:decoration-[var(--teal)] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--teal)]">Let’s plan your kitchen <span aria-hidden="true">↗</span></a>
+            </div>
+          </details>
+
+          <details name="services" data-service="closet" data-caption="Closet inspiration · A place for everything" class="group border-b border-[var(--line)]">
+            <summary class="flex min-h-[96px] cursor-pointer list-none items-center justify-between gap-4 py-6 font-[family-name:var(--font-ui)] text-[22px] leading-tight text-[var(--ink)] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--teal)] md:text-[25px] [&amp;::-webkit-details-marker]:hidden">
+              Closets &amp; storage
+              <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-[var(--line)] text-[var(--teal)] transition-colors group-open:border-[var(--teal)] group-open:bg-[var(--teal)] group-open:text-white">
+                <svg viewBox="0 0 20 20" class="h-4 w-4 transition-transform duration-200 group-open:rotate-45 motion-reduce:transition-none" fill="none" stroke="currentColor" stroke-width="1.25" aria-hidden="true"><path d="M4 10h12M10 4v12"></path></svg>
+              </span>
+            </summary>
+            <div class="pb-7 pr-4">
+              <p class="max-w-[430px] text-[15px] leading-[1.85]">Make room for what you use every day. Our custom closet and storage solutions are designed around your belongings and the space you have, so everything has a place.</p>
+              <p class="mt-5 font-[family-name:var(--font-ui)] text-[13px] leading-relaxed text-[var(--teal)]">Custom closets · Tailored storage · Integrated cabinetry</p>
+              <a href="#contact" class="mt-5 inline-flex items-center gap-3 font-[family-name:var(--font-ui)] text-sm text-[var(--ink)] underline decoration-[var(--line)] underline-offset-4 hover:decoration-[var(--teal)] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--teal)]">Let’s make room <span aria-hidden="true">↗</span></a>
+            </div>
+          </details>
+
+          <details name="services" data-service="builtins" data-caption="Built-in inspiration · Storage that belongs" class="group border-b border-[var(--line)]">
+            <summary class="flex min-h-[96px] cursor-pointer list-none items-center justify-between gap-4 py-6 font-[family-name:var(--font-ui)] text-[22px] leading-tight text-[var(--ink)] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--teal)] md:text-[25px] [&amp;::-webkit-details-marker]:hidden">
+              Millwork &amp; built-ins
+              <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-[var(--line)] text-[var(--teal)] transition-colors group-open:border-[var(--teal)] group-open:bg-[var(--teal)] group-open:text-white">
+                <svg viewBox="0 0 20 20" class="h-4 w-4 transition-transform duration-200 group-open:rotate-45 motion-reduce:transition-none" fill="none" stroke="currentColor" stroke-width="1.25" aria-hidden="true"><path d="M4 10h12M10 4v12"></path></svg>
+              </span>
+            </summary>
+            <div class="pb-7 pr-4">
+              <p class="max-w-[430px] text-[15px] leading-[1.85]">Furniture and storage can feel like part of the room, not an afterthought. We design residential millwork and built-ins that bring your space together and make it more useful.</p>
+              <p class="mt-5 font-[family-name:var(--font-ui)] text-[13px] leading-relaxed text-[var(--teal)]">Residential millwork · Built-in furniture · Custom cabinetry</p>
+              <a href="#contact" class="mt-5 inline-flex items-center gap-3 font-[family-name:var(--font-ui)] text-sm text-[var(--ink)] underline decoration-[var(--line)] underline-offset-4 hover:decoration-[var(--teal)] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--teal)]">Tell us about your space <span aria-hidden="true">↗</span></a>
+            </div>
+          </details>
+
+          <details name="services" data-service="commercial" data-caption="Commercial inspiration · A welcoming retail interior" class="group border-b border-[var(--line)]">
+            <summary class="flex min-h-[96px] cursor-pointer list-none items-center justify-between gap-4 py-6 font-[family-name:var(--font-ui)] text-[22px] leading-tight text-[var(--ink)] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--teal)] md:text-[25px] [&amp;::-webkit-details-marker]:hidden">
+              Retail &amp; commercial
+              <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-[var(--line)] text-[var(--teal)] transition-colors group-open:border-[var(--teal)] group-open:bg-[var(--teal)] group-open:text-white">
+                <svg viewBox="0 0 20 20" class="h-4 w-4 transition-transform duration-200 group-open:rotate-45 motion-reduce:transition-none" fill="none" stroke="currentColor" stroke-width="1.25" aria-hidden="true"><path d="M4 10h12M10 4v12"></path></svg>
+              </span>
+            </summary>
+            <div class="pb-7 pr-4">
+              <p class="max-w-[430px] text-[15px] leading-[1.85]">Thoughtful cabinetry works hard in a business, too. We create custom cabinetry and millwork for retail stores and commercial spaces, with your day-to-day needs in mind.</p>
+              <p class="mt-5 font-[family-name:var(--font-ui)] text-[13px] leading-relaxed text-[var(--teal)]">Retail-store cabinetry · Commercial millwork · Installation</p>
+              <a href="#contact" class="mt-5 inline-flex items-center gap-3 font-[family-name:var(--font-ui)] text-sm text-[var(--ink)] underline decoration-[var(--line)] underline-offset-4 hover:decoration-[var(--teal)] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--teal)]">Talk about your business space <span aria-hidden="true">↗</span></a>
+            </div>
+          </details>
+        </div>
+
+        <figure class="min-w-0">
+          <div class="relative aspect-[6/5] overflow-hidden rounded-[var(--image-radius)] bg-[var(--wood-wash)] lg:aspect-[1/1.08]">
+            <img data-service-image="kitchen" src="assets/design-kitchens.webp" alt="Kitchen design inspiration with oak shaker cabinetry, pale stone counters and understated brass handles." width="900" height="1000" loading="lazy" decoding="async" class="absolute inset-0 h-full w-full object-cover" sizes="(max-width: 390px) 100vw, (max-width: 640px) 100vw, (max-width: 768px) 100vw, (max-width: 1024px) 480px, (max-width: 1280px) 600px, 660px">
+            <img data-service-image="closet" src="assets/design-builtins.webp" alt="Closet inspiration with floor-to-ceiling oak storage, integrated drawers and neatly arranged hanging space." width="900" height="1000" loading="lazy" decoding="async" hidden="" class="absolute inset-0 h-full w-full object-cover" sizes="(max-width: 390px) 100vw, (max-width: 640px) 100vw, (max-width: 768px) 100vw, (max-width: 1024px) 480px, (max-width: 1280px) 600px, 660px">
+            <img data-service-image="builtins" src="assets/design-builtins.webp" alt="Living-room inspiration with custom oak built-in cabinets and open shelving against a white wall." width="900" height="1000" loading="lazy" decoding="async" hidden="" class="absolute inset-0 h-full w-full object-cover" sizes="(max-width: 390px) 100vw, (max-width: 640px) 100vw, (max-width: 768px) 100vw, (max-width: 1024px) 480px, (max-width: 1280px) 600px, 660px">
+            <img data-service-image="commercial" src="assets/design-retail.webp" alt="Retail design inspiration with oak display shelving and a curved timber service counter in a bright boutique." width="900" height="1000" loading="lazy" decoding="async" hidden="" class="absolute inset-0 h-full w-full object-cover" sizes="(max-width: 390px) 100vw, (max-width: 640px) 100vw, (max-width: 768px) 100vw, (max-width: 1024px) 480px, (max-width: 1280px) 600px, 660px">
+          </div>
+          <figcaption id="service-caption" class="pt-4 font-[family-name:var(--font-ui)] text-[13px] text-[var(--muted)]">Kitchen inspiration · Warm oak &amp; timeless cabinetry</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="work" aria-labelledby="work-heading" class="mx-auto max-w-[var(--content-width)] px-[var(--page-gutter)] py-[var(--section-space)]">
+      <div class="mb-10 max-w-[730px] md:mb-12">
+        <h2 id="work-heading" class="font-[family-name:var(--font-heading)] text-[clamp(2.75rem,4.6vw,4.5rem)] font-medium leading-[1.04] tracking-[-0.025em] text-[var(--ink)]">Our work, project by project.</h2>
+        <p class="mt-5 max-w-[600px] text-[15px] leading-[1.85] md:text-base">Real projects from our workshop, grouped the way we shared them — post by post. Tap any project to browse its photos.</p>
+      </div>
+      <div class="pf-grid">
+      <article class="pf-group">
+        <div class="pf-mosaic"><button class="pf-tile pf-cover" data-g="0" data-i="0" aria-label="View photos of Fluted wood island kitchen"><img src="assets/work-wood-island.jpg" alt="Fluted wood island, front" loading="lazy"></button><div class="pf-rail"><button class="pf-tile" data-g="0" data-i="1" aria-label="View photos of Fluted wood island kitchen"><img src="assets/work-fluted-stools.jpg" alt="Fluted island with bar stools" loading="lazy"></button><button class="pf-tile" data-g="0" data-i="2" aria-label="View photos of Fluted wood island kitchen"><img src="assets/work-fluted-shelving.jpg" alt="Fluted island with open shelving" loading="lazy"></button><button class="pf-tile" data-g="0" data-i="3" aria-label="View photos of Fluted wood island kitchen"><img src="assets/work-fluted-side.jpg" alt="Fluted island, side view" loading="lazy"><span class="pf-more">+2 more</span></button></div></div>
+        <div class="pf-meta"><h3>Fluted wood island kitchen</h3><span>5 photos · tap to view</span></div>
+      </article>
+      <article class="pf-group">
+        <div class="pf-mosaic"><button class="pf-tile pf-cover" data-g="1" data-i="0" aria-label="View photos of White kitchen, wood ceiling"><img src="assets/work-white-kitchen.jpg" alt="White kitchen with centre island" loading="lazy"></button><div class="pf-rail"><button class="pf-tile" data-g="1" data-i="1" aria-label="View photos of White kitchen, wood ceiling"><img src="assets/work-corner-range.jpg" alt="White kitchen corner, gas range" loading="lazy"></button><button class="pf-tile" data-g="1" data-i="2" aria-label="View photos of White kitchen, wood ceiling"><img src="assets/work-galley.jpg" alt="White galley kitchen" loading="lazy"></button><button class="pf-tile" data-g="1" data-i="3" aria-label="View photos of White kitchen, wood ceiling"><img src="assets/work-pantry.jpg" alt="Pantry storage wall" loading="lazy"></button></div></div>
+        <div class="pf-meta"><h3>White kitchen, wood ceiling</h3><span>4 photos · tap to view</span></div>
+      </article>
+      <article class="pf-group">
+        <div class="pf-mosaic"><button class="pf-tile pf-cover" data-g="2" data-i="0" aria-label="View photos of Waterfall island kitchen"><img src="assets/work-marble-island.jpg" alt="Marble island with pendant lights" loading="lazy"></button><div class="pf-rail"><button class="pf-tile" data-g="2" data-i="1" aria-label="View photos of Waterfall island kitchen"><img src="assets/work-darkwood-wine.jpg" alt="Dark wood island, wine fridge" loading="lazy"></button><button class="pf-tile" data-g="2" data-i="2" aria-label="View photos of Waterfall island kitchen"><img src="assets/work-waterfall-side.jpg" alt="Waterfall island, side view" loading="lazy"></button><button class="pf-tile" data-g="2" data-i="3" aria-label="View photos of Waterfall island kitchen"><img src="assets/work-darkwood-panel.jpg" alt="Panelled island, marble top" loading="lazy"><span class="pf-more">+3 more</span></button></div></div>
+        <div class="pf-meta"><h3>Waterfall island kitchen</h3><span>6 photos · tap to view</span></div>
+      </article>
+      <article class="pf-group">
+        <div class="pf-mosaic"><button class="pf-tile pf-cover" data-g="3" data-i="0" aria-label="View photos of Retail store millwork"><img src="assets/work-retail.jpg" alt="Retail shelving with LED lighting" loading="lazy"></button><div class="pf-rail"><button class="pf-tile" data-g="3" data-i="1" aria-label="View photos of Retail store millwork"><img src="assets/work-retail-wide.jpg" alt="Retail space, wide view" loading="lazy"></button><button class="pf-tile" data-g="3" data-i="2" aria-label="View photos of Retail store millwork"><img src="assets/work-retail-front.jpg" alt="Retail shelving wall" loading="lazy"></button></div></div>
+        <div class="pf-meta"><h3>Retail store millwork</h3><span>3 photos · tap to view</span></div>
+      </article>
+      <article class="pf-group">
+        <div class="pf-mosaic"><button class="pf-tile pf-cover" data-g="4" data-i="0" aria-label="View photos of White &amp; wood kitchen"><img src="assets/work-white-wood.jpg" alt="White cabinets, wood countertops" loading="lazy"></button></div>
+        <div class="pf-meta"><h3>White &amp; wood kitchen</h3><span>1 photo · tap to view</span></div>
+      </article>
+      <article class="pf-group">
+        <div class="pf-mosaic"><button class="pf-tile pf-cover" data-g="5" data-i="0" aria-label="View photos of Grey shaker kitchen"><img src="assets/work-grey-shaker.jpg" alt="Grey shaker kitchen, double oven" loading="lazy"></button></div>
+        <div class="pf-meta"><h3>Grey shaker kitchen</h3><span>1 photo · tap to view</span></div>
+      </article>
+      </div>
+    </section>
+
+    <section id="approach" aria-labelledby="approach-heading" class="bg-[var(--aqua)]">
+      <div class="mx-auto grid max-w-[var(--content-width)] items-center gap-10 px-[var(--page-gutter)] py-[var(--section-space)] lg:grid-cols-[0.85fr_1.15fr] lg:gap-20 xl:gap-28">
+        <figure class="order-2 min-w-0 lg:order-1">
+          <div class="overflow-hidden rounded-[var(--image-radius)] bg-[var(--wood-wash)]">
+            <img src="assets/design-detail.webp" alt="Design detail of natural oak drawers, precise cabinet lines and a pale stone countertop." width="800" height="1000" loading="lazy" decoding="async" class="aspect-[5/4] w-full object-cover lg:aspect-[4/5]" sizes="(max-width: 390px) 100vw, (max-width: 640px) 100vw, (max-width: 768px) 100vw, (max-width: 1024px) 360px, (max-width: 1280px) 450px, 500px">
+          </div>
+          <figcaption class="mt-4 flex items-center gap-3 font-[family-name:var(--font-ui)] text-[13px] text-[var(--body)]">
+            <svg viewBox="0 0 32 24" class="h-5 w-7 shrink-0 text-[var(--teal)]" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M16 21C7 21 3 15 3 5c9 0 13 6 13 16Zm0 0C16 10 21 4 29 3c0 10-5 17-13 18ZM8 11l8 10L25 8"></path></svg>
+            Thoughtful details, from the inside out.
+          </figcaption>
+        </figure>
+
+        <div class="order-1 lg:order-2">
+          <h2 id="approach-heading" class="font-[family-name:var(--font-heading)] text-[clamp(2.75rem,4.4vw,4.25rem)] font-medium leading-[1.04] tracking-[-0.025em] text-[var(--ink)]">From first ideas<br>to the final fit.</h2>
+          <p class="mt-5 max-w-[500px] text-[15px] leading-[1.85]">You don’t need every detail figured out to get started. We take your project from concept and design through installation, helping bring the pieces together.</p>
+
+          <ol class="mt-8">
+            <li class="flex gap-5 border-t border-[var(--teal)]/20 py-6">
+              <span class="pt-0.5 font-[family-name:var(--font-heading)] text-[28px] leading-none text-[var(--teal)]" aria-hidden="true">01</span>
+              <div>
+                <h3 class="font-[family-name:var(--font-ui)] text-[21px] leading-tight text-[var(--ink)]">Start with a conversation.</h3>
+                <p class="mt-2 text-[14px] leading-[1.8]">Tell us about your space, what’s working and what you’d like to change. Your quote and consultation are free.</p>
+              </div>
+            </li>
+            <li class="flex gap-5 border-t border-[var(--teal)]/20 py-6">
+              <span class="pt-0.5 font-[family-name:var(--font-heading)] text-[28px] leading-none text-[var(--teal)]" aria-hidden="true">02</span>
+              <div>
+                <h3 class="font-[family-name:var(--font-ui)] text-[21px] leading-tight text-[var(--ink)]">Shape the design around you.</h3>
+                <p class="mt-2 text-[14px] leading-[1.8]">We work through the concept and cabinetry design, balancing the look you love with the function you need.</p>
+              </div>
+            </li>
+            <li class="flex gap-5 border-t border-[var(--teal)]/20 py-6">
+              <span class="pt-0.5 font-[family-name:var(--font-heading)] text-[28px] leading-none text-[var(--teal)]" aria-hidden="true">03</span>
+              <div>
+                <h3 class="font-[family-name:var(--font-ui)] text-[21px] leading-tight text-[var(--ink)]">Bring your space together.</h3>
+                <p class="mt-2 text-[14px] leading-[1.8]">From custom cabinetry to installation, we keep the details in focus so the finished space feels considered.</p>
+              </div>
+            </li>
+          </ol>
+
+          <a href="#contact" class="group mt-2 inline-flex items-center gap-5 border-b border-[var(--teal)] pb-2 font-[family-name:var(--font-ui)] text-[15px] text-[var(--teal)] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--teal)]">
+            Let’s talk about your ideas
+            <svg viewBox="0 0 24 24" class="h-4 w-4 transition-transform group-hover:translate-x-1 motion-reduce:transform-none" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 12h16m-6-6 6 6-6 6"></path></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="questions" aria-labelledby="questions-heading" class="mx-auto grid max-w-[var(--content-width)] gap-9 px-[var(--page-gutter)] py-[var(--section-space)] lg:grid-cols-[0.8fr_1.2fr] lg:gap-20">
+      <div>
+        <h2 id="questions-heading" class="max-w-[390px] font-[family-name:var(--font-heading)] text-[clamp(2.75rem,4.2vw,4rem)] font-medium leading-[1.06] tracking-[-0.025em] text-[var(--ink)]">A few things you might be wondering.</h2>
+        <p class="mt-5 max-w-[320px] text-[15px] leading-[1.8]">Have something else in mind? We’re happy to talk it through.</p>
+        <a href="https://www.facebook.com/people/Nest-Crafters-Home-and-Kitchen-Designs-LTD/61574918313178/" target="_blank" rel="noopener noreferrer" class="mt-5 inline-flex items-center gap-3 font-[family-name:var(--font-ui)] text-[15px] text-[var(--teal)] underline decoration-[var(--line)] underline-offset-4 hover:decoration-[var(--teal)] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--teal)]">Send us a message <span aria-hidden="true">↗</span><span class="sr-only"> on Facebook, opens in a new tab</span></a>
+      </div>
+
+      <div class="min-w-0 border-t border-[var(--line)]">
+        <details class="group border-b border-[var(--line)]">
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-5 py-6 font-[family-name:var(--font-ui)] text-[18px] leading-relaxed text-[var(--ink)] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--teal)] [&amp;::-webkit-details-marker]:hidden">
+            Which areas do you serve?
+            <svg viewBox="0 0 20 20" class="h-5 w-5 shrink-0 text-[var(--teal)] transition-transform group-open:rotate-45 motion-reduce:transition-none" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M4 10h12M10 4v12"></path></svg>
+          </summary>
+           <p class="max-w-[570px] pb-6 pr-8 text-[14px] leading-[1.85]">We’re based in Surrey, British Columbia, and serve Surrey, Vancouver and the wider Lower Mainland. Send us your project location when you get in touch.</p>
+        </details>
+
+        <details class="group border-b border-[var(--line)]">
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-5 py-6 font-[family-name:var(--font-ui)] text-[18px] leading-relaxed text-[var(--ink)] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--teal)] [&amp;::-webkit-details-marker]:hidden">
+            Do you do renovations or just cabinets?
+            <svg viewBox="0 0 20 20" class="h-5 w-5 shrink-0 text-[var(--teal)] transition-transform group-open:rotate-45 motion-reduce:transition-none" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M4 10h12M10 4v12"></path></svg>
+          </summary>
+          <p class="max-w-[570px] pb-6 pr-8 text-[14px] leading-[1.85]">We offer kitchen renovations as well as custom cabinetry. Our work spans concept development, design and installation. Tell us what you’re planning so we can discuss the right scope for your project.</p>
+        </details>
+
+        <details class="group border-b border-[var(--line)]">
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-5 py-6 font-[family-name:var(--font-ui)] text-[18px] leading-relaxed text-[var(--ink)] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--teal)] [&amp;::-webkit-details-marker]:hidden">
+            Can you work with modern and classic styles?
+            <svg viewBox="0 0 20 20" class="h-5 w-5 shrink-0 text-[var(--teal)] transition-transform group-open:rotate-45 motion-reduce:transition-none" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M4 10h12M10 4v12"></path></svg>
+          </summary>
+          <p class="max-w-[570px] pb-6 pr-8 text-[14px] leading-[1.85]">Yes. Our kitchen cabinetry is custom-designed to suit both modern and classic preferences. Share the colours, materials or inspiration you’re drawn to, and we can use those ideas to start the conversation.</p>
+        </details>
+
+        <details class="group border-b border-[var(--line)]">
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-5 py-6 font-[family-name:var(--font-ui)] text-[18px] leading-relaxed text-[var(--ink)] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--teal)] [&amp;::-webkit-details-marker]:hidden">
+            Do you take on commercial projects?
+            <svg viewBox="0 0 20 20" class="h-5 w-5 shrink-0 text-[var(--teal)] transition-transform group-open:rotate-45 motion-reduce:transition-none" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M4 10h12M10 4v12"></path></svg>
+          </summary>
+          <p class="max-w-[570px] pb-6 pr-8 text-[14px] leading-[1.85]">Yes. Alongside our residential work, we offer custom cabinetry and millwork for retail stores and other commercial interiors. Message us about your business space and what you need it to do.</p>
+        </details>
+
+        <details class="group border-b border-[var(--line)]">
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-5 py-6 font-[family-name:var(--font-ui)] text-[18px] leading-relaxed text-[var(--ink)] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--teal)] [&amp;::-webkit-details-marker]:hidden">
+            How do I get a quote?
+            <svg viewBox="0 0 20 20" class="h-5 w-5 shrink-0 text-[var(--teal)] transition-transform group-open:rotate-45 motion-reduce:transition-none" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M4 10h12M10 4v12"></path></svg>
+          </summary>
+          <p class="max-w-[570px] pb-6 pr-8 text-[14px] leading-[1.85]">Message Nest Crafters on Facebook to request your free quote and consultation. A short description of your project, your location and any photos or ideas you have are a helpful place to start.</p>
+        </details>
+      </div>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-heading" class="border-y border-[var(--line)] bg-[var(--aqua-light)]">
+      <div class="mx-auto grid max-w-[var(--content-width)] items-center gap-10 px-[var(--page-gutter)] py-[var(--section-space)] lg:grid-cols-[1.15fr_0.85fr] lg:gap-20">
+        <div>
+          <svg viewBox="0 0 40 32" class="mb-6 h-9 w-11 text-[var(--teal)]" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true">
+            <path d="M20 28C9 28 4 20 4 8c11 0 16 8 16 20Zm0 0C20 14 26 6 36 4c0 13-6 23-16 24ZM10 15l10 13L31 10"></path>
+          </svg>
+          <h2 id="contact-heading" class="font-[family-name:var(--font-heading)] text-[clamp(3rem,5.4vw,5.25rem)] font-medium leading-[1.02] tracking-[-0.03em] text-[var(--ink)]">Let’s make room<br>for your ideas.</h2>
+          <p class="mt-6 max-w-[420px] text-[15px] leading-[1.85]">Whether it’s a new kitchen, better storage or a business space, we’d love to hear what you have in mind.</p>
+        </div>
+
+        <div class="lg:border-l lg:border-[var(--line)] lg:pl-12 xl:pl-16">
+          <h3 class="font-[family-name:var(--font-ui)] text-[23px] font-normal leading-tight text-[var(--ink)]">A message is all it takes.</h3>
+          <p class="mt-4 text-[15px] leading-[1.8]">For your free quote and consultation, send us a little about:</p>
+          <ul class="mt-5 space-y-3 text-[14px] leading-relaxed">
+            <li class="flex items-start gap-3">
+              <svg viewBox="0 0 24 24" class="mt-0.5 h-5 w-5 shrink-0 text-[var(--teal)]" fill="none" stroke="currentColor" stroke-width="1.25" aria-hidden="true"><path d="M12 21C5 20 3 15 3 8c7 0 9 6 9 13Zm0 0c0-10 3-16 10-18 0 9-3 16-10 18Z"></path></svg>
+              Your location
+            </li>
+            <li class="flex items-start gap-3">
+              <svg viewBox="0 0 24 24" class="mt-0.5 h-5 w-5 shrink-0 text-[var(--teal)]" fill="none" stroke="currentColor" stroke-width="1.25" aria-hidden="true"><path d="M12 21C5 20 3 15 3 8c7 0 9 6 9 13Zm0 0c0-10 3-16 10-18 0 9-3 16-10 18Z"></path></svg>
+              The space you’d like to change
+            </li>
+            <li class="flex items-start gap-3">
+              <svg viewBox="0 0 24 24" class="mt-0.5 h-5 w-5 shrink-0 text-[var(--teal)]" fill="none" stroke="currentColor" stroke-width="1.25" aria-hidden="true"><path d="M12 21C5 20 3 15 3 8c7 0 9 6 9 13Zm0 0c0-10 3-16 10-18 0 9-3 16-10 18Z"></path></svg>
+              A few photos or ideas, if you have them
+            </li>
+          </ul>
+
+          <a href="https://www.facebook.com/people/Nest-Crafters-Home-and-Kitchen-Designs-LTD/61574918313178/" target="_blank" rel="noopener noreferrer" class="group mt-8 inline-flex min-h-14 w-full items-center justify-center gap-3 rounded-[var(--button-radius)] bg-[var(--teal)] px-5 py-4 font-[family-name:var(--font-ui)] text-[15px] text-white transition-colors hover:bg-[var(--teal-dark)] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--teal)] sm:w-auto">
+            <svg viewBox="0 0 24 24" class="h-5 w-5 shrink-0" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="0.8" fill="currentColor" stroke="none"></circle></svg>
+            Message us on Facebook
+            <svg viewBox="0 0 24 24" class="ml-1 h-4 w-4 shrink-0 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 motion-reduce:transform-none" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"></path></svg>
+            <span class="sr-only">, opens in a new tab</span>
+          </a>
+           <a href="tel:+12368805484" class="group mt-4 inline-flex min-h-14 w-full items-center justify-center gap-3 rounded-[var(--button-radius)] border border-[var(--teal)] px-5 py-4 font-[family-name:var(--font-ui)] text-[15px] text-[var(--teal)] transition-colors hover:bg-[var(--teal)] hover:text-white sm:w-auto">Call +1 (236) 880-5484</a>
+          <p class="mt-4 font-[family-name:var(--font-ui)] text-[13px] text-[var(--muted)]">@nestcraftersltd · Free quotes &amp; consultations</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="mx-auto max-w-[var(--content-width)] px-[var(--page-gutter)] pb-7 pt-12 md:pt-16">
+    <div class="flex flex-col justify-between gap-8 md:flex-row md:items-start">
+      <div>
+        <a href="#top" aria-label="Nest Crafters, back to top" class="inline-flex items-center gap-3 text-[var(--ink)] focus-visible:rounded-sm focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--teal)]">
+          <img src="assets/logo.jpg" alt="Nest Crafters — Home & kitchen designs ltd" style="width:200px;height:200px;object-fit:contain;border-radius:6px">
+        </a>
+        <p class="mt-5 max-w-[350px] text-[13px] leading-[1.8]">Custom cabinetry &amp; millwork.<br>At home in Surrey. Serving the Lower Mainland.</p>
+      </div>
+
+      <nav aria-label="Footer navigation" class="flex flex-wrap gap-x-7 gap-y-4 pt-2 font-[family-name:var(--font-ui)] text-[14px] text-[var(--ink)]">
+        <a href="#services" class="underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--teal)]">What we do</a>
+        <a href="#approach" class="underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--teal)]">Our approach</a>
+        <a href="#contact" class="underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--teal)]">Get in touch</a>
+        <a href="https://www.facebook.com/people/Nest-Crafters-Home-and-Kitchen-Designs-LTD/61574918313178/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--teal)]">Facebook <span aria-hidden="true">↗</span><span class="sr-only">, opens in a new tab</span></a>
+        <a href="tel:+12368805484" class="inline-flex items-center gap-2 underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--teal)]">+1 (236) 880-5484</a>
+        <a href="https://www.facebook.com/people/Nest-Crafters-Home-and-Kitchen-Designs-LTD/61574918313178/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--teal)]">Facebook <span aria-hidden="true">↗</span><span class="sr-only">, opens in a new tab</span></a>
+      </nav>
+    </div>
+
+    <div aria-label="Company details" class="mt-10 border-t border-[var(--line)] pt-5">
+      <p class="text-[11px] leading-[1.8] text-[var(--muted)]"><span class="font-semibold">Registered company:</span> NEST CRAFTERS HOME AND KITCHEN DESIGNS LTD.</p>
+    </div>
+    <div class="mt-5 flex flex-col justify-between gap-4 font-[family-name:var(--font-ui)] text-[12px] text-[var(--muted)] md:flex-row md:items-center">
+      <p>© <span id="copyright-year">2026</span> Nest Crafters. All rights reserved.</p>
+      <div class="flex flex-wrap items-center gap-x-7 gap-y-3">
+        <a href="/privacy" class="underline-offset-4 hover:text-[var(--teal)] hover:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--teal)]">Privacy Policy</a>
+        
+      </div>
+    </div>
+  </footer>
+
+  
+
+<div class="pflb" id="pflb" role="dialog" aria-label="Project photo viewer">
+  <button class="x" id="pfx" aria-label="Close">×</button>
+  <button class="nav prev" id="pfp" aria-label="Previous photo">‹</button>
+  <img id="pfi" src="" alt="">
+  <div class="cap" id="pfc"></div>
+  <button class="nav next" id="pfn" aria-label="Next photo">›</button>
+</div>
+<script>
+const PFG=[{"t": "Fluted wood island kitchen", "p": ["work-wood-island.jpg", "work-fluted-stools.jpg", "work-fluted-shelving.jpg", "work-fluted-side.jpg", "work-fluted-styled.jpg"]}, {"t": "White kitchen, wood ceiling", "p": ["work-white-kitchen.jpg", "work-corner-range.jpg", "work-galley.jpg", "work-pantry.jpg"]}, {"t": "Waterfall island kitchen", "p": ["work-marble-island.jpg", "work-darkwood-wine.jpg", "work-waterfall-side.jpg", "work-darkwood-panel.jpg", "work-range-display.jpg", "work-glass-display.jpg"]}, {"t": "Retail store millwork", "p": ["work-retail.jpg", "work-retail-wide.jpg", "work-retail-front.jpg"]}, {"t": "White & wood kitchen", "p": ["work-white-wood.jpg"]}, {"t": "Grey shaker kitchen", "p": ["work-grey-shaker.jpg"]}];
+const lb=document.getElementById('pflb'),im=document.getElementById('pfi'),cap=document.getElementById('pfc');
+let G=0,I=0;
+function show(){const g=PFG[G];im.src='assets/'+g.p[I];im.alt=g.t;cap.textContent=g.t+' — '+(I+1)+' / '+g.p.length;document.getElementById('pfp').style.display=g.p.length>1?'':'none';document.getElementById('pfn').style.display=g.p.length>1?'':'none'}
+function openPf(g,i){G=g;I=i;show();lb.classList.add('open');document.body.style.overflow='hidden'}
+function closePf(){lb.classList.remove('open');document.body.style.overflow=''}
+document.querySelectorAll('.pf-tile').forEach(b=>b.addEventListener('click',()=>openPf(+b.dataset.g,+b.dataset.i)));
+document.getElementById('pfx').addEventListener('click',closePf);
+document.getElementById('pfn').addEventListener('click',e=>{e.stopPropagation();I=(I+1)%PFG[G].p.length;show()});
+document.getElementById('pfp').addEventListener('click',e=>{e.stopPropagation();I=(I-1+PFG[G].p.length)%PFG[G].p.length;show()});
+lb.addEventListener('click',e=>{if(e.target===lb)closePf()});
+document.addEventListener('keydown',e=>{if(!lb.classList.contains('open'))return;if(e.key==='Escape')closePf();if(e.key==='ArrowRight'){I=(I+1)%PFG[G].p.length;show()}if(e.key==='ArrowLeft'){I=(I-1+PFG[G].p.length)%PFG[G].p.length;show()}});
+</script>
+</body></html>
