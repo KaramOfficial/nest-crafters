@@ -87,21 +87,21 @@
 </style>
 <style>
 :root{--ink:#1a2a33;--body:#43565e;--muted:#61747c;--teal:#0a6e66;--teal-dark:#075049;--paper:#fafaf7;--aqua:#e8f0ee;--aqua-light:#eff5f3;--line:#cfddd8}
-.heroX{position:relative;padding:64px 20px 0;text-align:center;background:radial-gradient(640px 340px at 50% 150px,#e9f1ee 0%,rgba(233,241,238,0) 65%),var(--paper);overflow:hidden}
-.heroX .lring{position:relative;width:min(290px,62vw);margin:6px auto 0}
+.heroX{position:relative;padding:46px 20px 0;text-align:center;background:radial-gradient(640px 340px at 50% 150px,#e9f1ee 0%,rgba(233,241,238,0) 65%),var(--paper);overflow:hidden}
+.heroX .lring{position:relative;width:min(208px,50vw);margin:4px auto 0}
 .heroX .lring::before{content:"";position:absolute;inset:-15px;border:1px solid #b9cdc6;border-radius:50%}
 .heroX .lring::after{content:"";position:absolute;inset:-30px;border:1px dashed #c8d8d2;border-radius:50%}
 .heroX .lring img{width:100%;border-radius:50%;display:block}
-.heroX .est{margin-top:44px;font-family:var(--font-ui);font-size:12px;font-weight:500;letter-spacing:.34em;text-transform:uppercase;color:#33545f}
+.heroX .est{margin-top:36px;font-family:var(--font-ui);font-size:12px;font-weight:500;letter-spacing:.34em;text-transform:uppercase;color:#33545f}
 .heroX h1{margin-top:14px;font-family:var(--font-heading);font-weight:500;font-size:clamp(3.1rem,7.2vw,5.8rem);line-height:.99;letter-spacing:-.03em;color:var(--ink)}
 .heroX h1 em{font-style:italic;color:#0a6e66}
-.heroX .sub{margin:20px auto 0;max-width:520px;font-size:16.5px;line-height:1.65;color:var(--body)}
+.heroX .sub{margin:26px auto 0;max-width:520px;font-size:16.5px;line-height:1.65;color:var(--body)}
 .heroX .row{margin-top:26px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
 .heroX .call{margin-top:16px;font-family:var(--font-ui);font-size:13.5px;letter-spacing:.015em;color:var(--muted)}
 .heroX .call a{color:var(--teal);font-weight:500;text-decoration:underline;text-underline-offset:4px;text-decoration-color:#b9cdc6}
-.heroX .nest{display:block;width:min(880px,94vw);margin:38px auto 0}
-.heroX .photo{width:min(1240px,94vw);margin:26px auto 0;display:block}
-.heroX .photo img{width:100%;height:min(62vh,540px);object-fit:cover;border-radius:3px;box-shadow:0 14px 35px rgb(26 42 51 / 10%)}
+.heroX .nest{display:block;width:min(880px,94vw);margin:30px auto 0}
+.heroX .photo{width:min(880px,94vw);margin:30px auto 0;display:block}
+.heroX .photo img{width:100%;height:min(56vh,470px);object-fit:cover;border-radius:470px 470px 3px 3px;box-shadow:0 14px 35px rgb(26 42 51 / 12%)}
 @media(max-width:560px){.heroX{padding-top:44px}.heroX .est{letter-spacing:.24em}}
 </style>
 <style>.btn-x{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:13px 26px;border-radius:999px;font-family:var(--font-ui);font-size:15px;font-weight:500;letter-spacing:.015em;text-decoration:none;border:1px solid transparent;transition:background .18s ease,color .18s ease}.btn-solid{background:var(--teal);color:#fff}.btn-solid:hover{background:var(--teal-dark)}.btn-line{background:transparent;color:var(--teal);border-color:var(--teal)}.btn-line:hover{background:var(--teal);color:#fff}</style>
@@ -152,6 +152,7 @@
   <div class="lring"><img src="assets/logo-badge.jpg" alt="Nest Crafters logo — a house resting in a nest" fetchpriority="high"></div>
   <div class="est">Home &amp; Kitchen Designs Ltd</div>
   <h1 id="hero-heading">Your kitchen.<br><em>made around you.</em></h1>
+  <figure class="photo"><img src="assets/design-hero.webp" alt="Bright kitchen with warm oak cabinetry and a generous stone island"></figure>
   <p class="sub">Custom cabinetry, kitchen renovations and thoughtful storage — designed for your space, from the first ideas to the final installation.</p>
   <div class="row">
     <a href="#contact" class="btn-x btn-solid">Start with a free consultation</a>
@@ -166,7 +167,6 @@
     <path d="M1030 40 q 22 -4 30 14 q -22 4 -30 -14Z" fill="#0a6e66"/>
     <path d="M585 74 q 20 -5 28 12 q -20 5 -28 -12Z" fill="#0a6e66" opacity=".85"/>
   </svg>
-  <figure class="photo"><img src="assets/design-hero.webp" alt="Bright kitchen with warm oak cabinetry and a generous stone island"></figure>
 </section>
 
     <section id="services" aria-labelledby="services-heading" class="mx-auto max-w-[var(--content-width)] px-[var(--page-gutter)] py-[var(--section-space)]">
