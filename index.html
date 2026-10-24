@@ -85,79 +85,104 @@
 .pflb .nav{position:absolute;top:50%;transform:translateY(-50%);background:rgba(255,255,255,.14);border:none;color:#fff;width:44px;height:44px;border-radius:50%;font-size:22px;cursor:pointer}
 .pflb .prev{left:12px}.pflb .next{right:12px}
 </style>
+<style>
+:root{--ink:#1a2a33;--body:#43565e;--muted:#61747c;--teal:#0a6e66;--teal-dark:#075049;--paper:#fafaf7;--aqua:#e8f0ee;--aqua-light:#eff5f3;--line:#cfddd8}
+.heroX{position:relative;padding:46px 20px 0;text-align:center;background:radial-gradient(640px 340px at 50% 150px,#e9f1ee 0%,rgba(233,241,238,0) 65%),var(--paper);overflow:hidden}
+.heroX .lring{position:relative;width:min(208px,50vw);margin:4px auto 0}
+.heroX .lring::before{content:"";position:absolute;inset:-15px;border:1px solid #b9cdc6;border-radius:50%}
+.heroX .lring::after{content:"";position:absolute;inset:-30px;border:1px dashed #c8d8d2;border-radius:50%}
+.heroX .lring img{width:100%;border-radius:50%;display:block}
+.heroX .est{margin-top:36px;font-family:var(--font-ui);font-size:12px;font-weight:500;letter-spacing:.34em;text-transform:uppercase;color:#33545f}
+.heroX h1{margin-top:14px;font-family:var(--font-heading);font-weight:500;font-size:clamp(3.1rem,7.2vw,5.8rem);line-height:.99;letter-spacing:-.03em;color:var(--ink)}
+.heroX h1 em{font-style:italic;color:#0a6e66}
+.heroX .sub{margin:26px auto 0;max-width:520px;font-size:16.5px;line-height:1.65;color:var(--body)}
+.heroX .row{margin-top:26px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.heroX .call{margin-top:16px;font-family:var(--font-ui);font-size:13.5px;letter-spacing:.015em;color:var(--muted)}
+.heroX .call a{color:var(--teal);font-weight:500;text-decoration:underline;text-underline-offset:4px;text-decoration-color:#b9cdc6}
+.heroX .nest{display:block;width:min(880px,94vw);margin:30px auto 0}
+.heroX .photo{width:min(880px,94vw);margin:30px auto 0;display:block}
+.heroX .photo img{width:100%;height:min(56vh,470px);object-fit:cover;border-radius:470px 470px 3px 3px;box-shadow:0 14px 35px rgb(26 42 51 / 12%)}
+@media(max-width:560px){.heroX{padding-top:44px}.heroX .est{letter-spacing:.24em}}
+</style>
+<style>.btn-x{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:13px 26px;border-radius:999px;font-family:var(--font-ui);font-size:15px;font-weight:500;letter-spacing:.015em;text-decoration:none;border:1px solid transparent;transition:background .18s ease,color .18s ease}.btn-solid{background:var(--teal);color:#fff}.btn-solid:hover{background:var(--teal-dark)}.btn-line{background:transparent;color:var(--teal);border-color:var(--teal)}.btn-line:hover{background:var(--teal);color:#fff}</style>
+<style>
+.th{position:fixed;top:0;left:0;right:0;z-index:60;transition:background .25s ease,box-shadow .25s ease,border-color .25s ease;border-bottom:1px solid transparent}
+.th.solid{background:rgba(250,250,247,.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom-color:var(--line);box-shadow:0 10px 30px rgb(26 42 51 / 6%)}
+.th-in{max-width:1440px;margin:0 auto;display:flex;align-items:center;gap:26px;padding:14px clamp(20px,4vw,56px)}
+.th-brand{display:flex;align-items:center;gap:11px;text-decoration:none;color:var(--ink)}
+.th-brand img{width:42px;height:42px;border-radius:50%;object-fit:cover}
+.th-wm{display:flex;flex-direction:column;line-height:1.2}
+.th-wm strong{font-family:var(--font-ui);font-weight:600;font-size:13.5px;letter-spacing:.18em}
+.th-wm small{font-family:var(--font-ui);font-size:8.5px;letter-spacing:.28em;color:var(--muted)}
+.th-links{margin-left:auto;display:flex;gap:28px}
+.th-links a{font-family:var(--font-ui);font-size:13.5px;font-weight:500;letter-spacing:.05em;color:var(--ink);text-decoration:none}
+.th-links a:hover{color:var(--teal)}
+.th-cta{border:1.5px solid var(--teal);color:var(--teal);padding:9px 20px;border-radius:999px;font-family:var(--font-ui);font-size:13.5px;font-weight:500;letter-spacing:.03em;text-decoration:none;white-space:nowrap;transition:background .18s ease,color .18s ease}
+.th-cta:hover{background:var(--teal);color:#fff}
+.th-burger{display:none}
+.th-panel{margin:2px clamp(12px,3vw,24px) 12px auto;width:min(320px,calc(100vw - 24px));background:rgba(250,250,247,.98);border:1px solid var(--line);border-radius:20px;box-shadow:0 16px 36px rgb(26 42 51 / 12%);padding:10px}
+.th-panel a{display:block;padding:12px 14px;font-family:var(--font-ui);font-size:15px;font-weight:500;color:var(--ink);text-decoration:none;border-radius:12px}
+.th-panel a.th-cta2{display:block;text-align:center;background:var(--teal);color:#fff;border-radius:999px;margin-top:6px;padding:13px 14px}
+.heroX{padding-top:120px}
+@media(max-width:900px){
+.th-links,.th>.th-in>.th-cta{display:none}
+.th-burger{display:inline-flex;margin-left:auto;width:42px;height:42px;border-radius:50%;border:1px solid #b9cdc6;background:rgba(250,250,247,.6);color:var(--ink);align-items:center;justify-content:center;cursor:pointer;flex:none}
+.heroX{padding-top:104px}
+}
+@media(max-width:420px){.th-wm small{display:none}.th-wm strong{font-size:12px;letter-spacing:.12em}}
+</style>
 </head>
 <body id="top" class="bg-[var(--paper)] font-[family-name:var(--font-body)] text-[var(--body)] antialiased selection:bg-[var(--aqua)] selection:text-[var(--ink)]">
   <a href="#main" class="sr-only fixed left-4 top-4 z-[100] rounded-[var(--button-radius)] bg-[var(--ink)] px-6 py-3 text-white focus:not-sr-only">Skip to content</a>
 
-  <header class="sticky top-0 z-50 bg-[var(--paper)]">
-    <div class="mx-auto flex h-[86px] max-w-[var(--content-width)] items-center justify-between gap-5 px-[var(--page-gutter)] lg:h-[98px]">
-      <a href="#top" aria-label="Nest Crafters home" class="flex shrink-0 items-center gap-2 text-[var(--ink)] min-[360px]:gap-3 focus-visible:rounded-sm focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--teal)]">
-        <img src="assets/logo-badge.jpg" alt="Nest Crafters logo" class="h-10 w-10 shrink-0 rounded-full object-cover min-[360px]:h-12 min-[360px]:w-12 lg:h-14 lg:w-14">
-        <span class="flex flex-col">
-          <span class="font-[family-name:var(--font-ui)] text-[16px] font-medium leading-tight tracking-[0.13em] min-[360px]:text-[18px] lg:text-[21px]">NEST CRAFTERS</span>
-          <span class="mt-1 font-[family-name:var(--font-ui)] text-[8px] tracking-[0.16em] min-[360px]:text-[9px] lg:text-[10px]">HOME &amp; KITCHEN DESIGNS</span>
-        </span>
-      </a>
-
-      <nav aria-label="Main navigation" class="hidden items-center gap-8 font-[family-name:var(--font-ui)] text-[15px] text-[var(--ink)] lg:flex xl:gap-10">
-        <a href="#work" class="decoration-[var(--teal)] underline-offset-8 transition-colors hover:text-[var(--teal)] hover:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--teal)]">Our Work</a><a href="#services" class="decoration-[var(--teal)] underline-offset-8 transition-colors hover:text-[var(--teal)] hover:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--teal)]">What we do</a>
-        <a href="#approach" class="decoration-[var(--teal)] underline-offset-8 transition-colors hover:text-[var(--teal)] hover:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--teal)]">Our approach</a>
-        <a href="#questions" class="decoration-[var(--teal)] underline-offset-8 transition-colors hover:text-[var(--teal)] hover:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--teal)]">FAQs</a>
-        <a href="#contact" class="group inline-flex items-center gap-6 rounded-[var(--button-radius)] border border-[var(--teal)] px-6 py-3 text-[var(--teal)] transition-colors hover:bg-[var(--teal)] hover:text-white focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--teal)]">
-          Get a free quote
-          <svg viewBox="0 0 24 24" class="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 motion-reduce:transform-none" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"></path></svg>
-        </a>
-      </nav>
-
-      <details id="mobile-menu" class="group lg:hidden">
-        <summary aria-label="Open navigation menu" class="flex h-11 w-11 cursor-pointer list-none items-center justify-center rounded-full border border-[var(--line)] text-[var(--ink)] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--teal)] [&amp;::-webkit-details-marker]:hidden">
-          <svg viewBox="0 0 24 24" class="h-5 w-5 group-open:hidden" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 8h16M4 16h16"></path></svg>
-          <svg viewBox="0 0 24 24" class="hidden h-5 w-5 group-open:block" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="m6 6 12 12M6 18 18 6"></path></svg>
-        </summary>
-        <nav aria-label="Mobile navigation" class="absolute left-0 right-0 top-full flex flex-col border-b border-[var(--line)] bg-[var(--paper)] px-[var(--page-gutter)] pb-7 pt-3 font-[family-name:var(--font-ui)] text-lg shadow-[var(--soft-shadow)]">
-          <a href="#services" class="border-b border-[var(--line)] py-4 text-[var(--ink)] focus-visible:outline-2 focus-visible:outline-[var(--teal)]">What we do</a>
-          <a href="#approach" class="border-b border-[var(--line)] py-4 text-[var(--ink)] focus-visible:outline-2 focus-visible:outline-[var(--teal)]">Our approach</a>
-          <a href="#questions" class="py-4 text-[var(--ink)] focus-visible:outline-2 focus-visible:outline-[var(--teal)]">FAQs</a>
-          <a href="#contact" class="mt-3 rounded-[var(--button-radius)] bg-[var(--teal)] px-6 py-3 text-center text-white focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--teal)]">Get a free quote</a>
-        </nav>
-      </details>
-    </div>
-    <div aria-hidden="true" class="absolute bottom-0 left-0 h-px w-full bg-[var(--line)]">
-      <div id="reading-progress" class="h-full w-full origin-left scale-x-0 bg-[var(--teal)]"></div>
-    </div>
-  </header>
+  <div id="reading-progress" style="position:fixed;top:0;left:0;height:3px;width:100%;transform-origin:left;transform:scaleX(0);background:var(--teal);z-index:70"></div>
+<header class="th" id="top">
+  <div class="th-in">
+    <a class="th-brand" href="#top" aria-label="Nest Crafters home">
+      <img src="assets/logo-badge.jpg" alt="">
+      <span class="th-wm"><strong>NEST CRAFTERS</strong><small>HOME &amp; KITCHEN DESIGNS</small></span>
+    </a>
+    <nav class="th-links" aria-label="Main">
+      <a href="#work">Our Work</a>
+      <a href="#services">What we do</a>
+      <a href="#approach">Our approach</a>
+      <a href="#questions">FAQs</a>
+    </nav>
+    <a class="th-cta" href="#contact">Get a free quote</a>
+    <button class="th-burger" id="nvBtn" aria-expanded="false" aria-controls="nvPanel" aria-label="Open menu">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 8h16M4 16h16"/></svg>
+    </button>
+  </div>
+  <nav class="th-panel" id="nvPanel" aria-label="Menu" hidden>
+    <a href="#work">Our Work</a>
+    <a href="#services">What we do</a>
+    <a href="#approach">Our approach</a>
+    <a href="#questions">FAQs</a>
+    <a class="th-cta2" href="#contact">Get a free quote</a>
+  </nav>
+</header>
 
   <main id="main">
-    <section aria-labelledby="hero-heading" class="mx-auto max-w-[var(--content-width)] px-[var(--page-gutter)] pt-10 md:pt-14 lg:pt-16">
-      <div class="grid items-end gap-7 pb-9 md:pb-11 lg:grid-cols-[1.35fr_0.75fr] lg:gap-16">
-        <h1 id="hero-heading" class="font-[family-name:var(--font-heading)] text-[clamp(3.5rem,6.7vw,6.5rem)] font-medium leading-[0.98] tracking-[-0.035em] text-[var(--ink)]">
-          Your kitchen.<br>
-          Made around you.
-        </h1>
-        <div class="max-w-[420px] lg:pb-1">
-          <p class="text-[15px] leading-[1.8] md:text-base">Custom cabinetry, kitchen renovations and thoughtful storage. Designed for your space, from the first ideas to the final installation.</p>
-          <a href="#contact" class="group mt-6 inline-flex min-h-12 items-center justify-center gap-5 rounded-[var(--button-radius)] bg-[var(--teal)] px-6 py-3.5 font-[family-name:var(--font-ui)] text-[15px] text-white transition-colors hover:bg-[var(--teal-dark)] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--teal)]">
-            Start with a free consultation
-            <svg viewBox="0 0 24 24" class="h-4 w-4 shrink-0 transition-transform group-hover:translate-x-1 motion-reduce:transform-none" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 12h16m-6-6 6 6-6 6"></path></svg>
-          </a>
-          <p class="mt-4 font-[family-name:var(--font-ui)] text-[13.5px] tracking-[0.015em] text-[var(--muted)]">or call us at <a href="tel:+12368805484" class="font-medium text-[var(--teal)] underline decoration-[var(--line)] underline-offset-4 hover:decoration-[var(--teal)]">+1 (236) 880-5484</a></p>
-           <p class="mt-4 font-[family-name:var(--font-ui)] text-[13px] tracking-[0.015em] text-[var(--muted)]">Surrey, Vancouver &amp; the Lower Mainland</p>
-        </div>
-      </div>
-
-      <figure>
-        <div class="group overflow-hidden rounded-[var(--image-radius)] bg-[var(--wood-wash)]">
-          <img data-hero="" fetchpriority="high" src="assets/design-hero.webp" alt="Bright kitchen inspiration with warm oak cabinetry, a generous stone island and morning light through large windows." width="1680" height="760" class="h-[310px] w-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-[1.015] motion-reduce:transform-none motion-reduce:transition-none sm:h-[410px] lg:h-[480px] xl:h-[530px]" loading="eager" sizes="(max-width: 390px) 470px, (max-width: 640px) 100vw, (max-width: 768px) 100vw, (max-width: 1024px) 100vw, (max-width: 1280px) 100vw, 65vw">
-        </div>
-        <figcaption class="flex flex-wrap items-center justify-between gap-x-6 gap-y-2 pt-4 font-[family-name:var(--font-ui)] text-[12px] text-[var(--muted)] md:text-[13px]">
-          <span>Natural warmth. Clean lines. Space for everyday life.</span>
-          <span class="inline-flex items-center gap-2">
-            <span class="h-px w-7 bg-[var(--teal)]" aria-hidden="true"></span>
-            Design inspiration
-          </span>
-        </figcaption>
-      </figure>
-    </section>
+    <section aria-labelledby="hero-heading" class="heroX">
+  <div class="lring"><img src="assets/logo-badge.jpg" alt="Nest Crafters logo — a house resting in a nest" fetchpriority="high"></div>
+  <div class="est">Home &amp; Kitchen Designs Ltd</div>
+  <h1 id="hero-heading">Your kitchen.<br><em>made around you.</em></h1>
+  <figure class="photo"><img src="assets/design-hero.webp" alt="Bright kitchen with warm oak cabinetry and a generous stone island"></figure>
+  <p class="sub">Custom cabinetry, kitchen renovations and thoughtful storage — designed for your space, from the first ideas to the final installation.</p>
+  <div class="row">
+    <a href="#contact" class="btn-x btn-solid">Start with a free consultation</a>
+    <a href="#work" class="btn-x btn-line">See our work</a>
+  </div>
+  <p class="call">or call us at <a href="tel:+12368805484">+1 (236) 880-5484</a> · Surrey, Vancouver &amp; the Lower Mainland</p>
+  <svg class="nest" viewBox="0 0 1200 90" fill="none" aria-hidden="true">
+    <path d="M60 20 C 360 95, 840 95, 1140 20" stroke="#1a2a33" stroke-width="3" stroke-linecap="round"/>
+    <path d="M210 8 C 450 78, 760 78, 1000 10" stroke="#1a2a33" stroke-width="3" stroke-linecap="round" opacity=".75"/>
+    <path d="M390 62 C 560 92, 680 90, 830 58" stroke="#1a2a33" stroke-width="3" stroke-linecap="round" opacity=".5"/>
+    <path d="M150 44 q 22 -4 30 14 q -22 4 -30 -14Z" fill="#0a6e66"/>
+    <path d="M1030 40 q 22 -4 30 14 q -22 4 -30 -14Z" fill="#0a6e66"/>
+    <path d="M585 74 q 20 -5 28 12 q -20 5 -28 -12Z" fill="#0a6e66" opacity=".85"/>
+  </svg>
+</section>
 
     <section id="services" aria-labelledby="services-heading" class="mx-auto max-w-[var(--content-width)] px-[var(--page-gutter)] py-[var(--section-space)]">
       <div class="mb-10 max-w-[730px] md:mb-12">
@@ -461,5 +486,13 @@ document.getElementById('pfn').addEventListener('click',e=>{e.stopPropagation();
 document.getElementById('pfp').addEventListener('click',e=>{e.stopPropagation();I=(I-1+PFG[G].p.length)%PFG[G].p.length;show()});
 lb.addEventListener('click',e=>{if(e.target===lb)closePf()});
 document.addEventListener('keydown',e=>{if(!lb.classList.contains('open'))return;if(e.key==='Escape')closePf();if(e.key==='ArrowRight'){I=(I+1)%PFG[G].p.length;show()}if(e.key==='ArrowLeft'){I=(I-1+PFG[G].p.length)%PFG[G].p.length;show()}});
+</script>
+<script>
+(function(){var b=document.getElementById('nvBtn'),p=document.getElementById('nvPanel');if(!b||!p)return;
+var hd=document.querySelector('.th');
+function onScroll(){if(hd)hd.classList.toggle('solid',window.scrollY>24||!p.hidden);}
+window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+b.addEventListener('click',function(){var open=p.hidden;p.hidden=!open;b.setAttribute('aria-expanded',String(open));onScroll();});
+p.addEventListener('click',function(e){if(e.target.closest('a')){p.hidden=true;b.setAttribute('aria-expanded','false');if(window.scrollY<=24&&hd)hd.classList.remove('solid');}});})();
 </script>
 </body></html>
