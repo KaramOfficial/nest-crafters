@@ -131,6 +131,26 @@
 }
 @media(max-width:420px){.th-wm small{display:none}.th-wm strong{font-size:12px;letter-spacing:.12em}}
 </style>
+<style>
+@keyframes ncWordUp{from{transform:translate3d(0,110%,0);opacity:0}to{transform:none;opacity:1}}
+@keyframes ncLogoIn{from{transform:scale(.88);opacity:0}to{transform:scale(1);opacity:1}}
+@keyframes ncBreathe{0%,100%{box-shadow:0 0 0 0 rgb(10 110 102 / 0%),0 16px 38px rgb(26 42 51 / 10%)}50%{box-shadow:0 0 0 12px rgb(10 110 102 / 5%),0 16px 42px rgb(26 42 51 / 13%)}}
+@keyframes ncRingSpin{to{rotate:360deg}}
+@keyframes ncArchIn{from{clip-path:inset(20% 13% 0 13% round 470px 470px 3px 3px);transform:translateY(38px);opacity:.4}to{clip-path:inset(0 0 0 0 round 470px 470px 3px 3px);transform:none;opacity:1}}
+.motion .heroX .lring img{animation:ncLogoIn 1.15s cubic-bezier(.2,.7,.2,1) both,ncBreathe 6s 1.3s ease-in-out infinite}
+.motion .heroX .lring::after{animation:ncRingSpin 90s linear infinite}
+.motion .heroX .photo img{animation:ncArchIn 1.5s .5s cubic-bezier(.2,.7,.2,1) both}
+.motion .w{display:inline-block;overflow:hidden;vertical-align:bottom;padding-bottom:.12em;margin-bottom:-.12em}
+.motion .w>.wi{display:inline-block;will-change:transform}
+.motion h1 .w>.wi{animation:ncWordUp 1.05s cubic-bezier(.2,.7,.2,1) both;animation-delay:var(--d,0s)}
+.motion h2 .w>.wi{transform:translate3d(0,110%,0);transition:transform 1s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0s)}
+.motion h2.w-in .w>.wi{transform:none}
+.motion .rv{opacity:0;transform:translateY(26px);transition:opacity .9s ease,transform .9s cubic-bezier(.2,.7,.2,1)}
+.motion .rv.in{opacity:1;transform:none}
+.motion .pf-group .pf-mosaic img{opacity:0;transition:opacity .8s ease}
+.motion .pf-group.in .pf-mosaic img{opacity:1}
+@media (prefers-reduced-motion: reduce){.motion .rv,.motion .pf-group .pf-mosaic img{opacity:1!important;transform:none!important}.motion *{animation:none!important;transition:none!important}}
+</style>
 </head>
 <body id="top" class="bg-[var(--paper)] font-[family-name:var(--font-body)] text-[var(--body)] antialiased selection:bg-[var(--aqua)] selection:text-[var(--ink)]">
   <a href="#main" class="sr-only fixed left-4 top-4 z-[100] rounded-[var(--button-radius)] bg-[var(--ink)] px-6 py-3 text-white focus:not-sr-only">Skip to content</a>
@@ -494,5 +514,49 @@ function onScroll(){if(hd)hd.classList.toggle('solid',window.scrollY>24||!p.hidd
 window.addEventListener('scroll',onScroll,{passive:true});onScroll();
 b.addEventListener('click',function(){var open=p.hidden;p.hidden=!open;b.setAttribute('aria-expanded',String(open));onScroll();});
 p.addEventListener('click',function(e){if(e.target.closest('a')){p.hidden=true;b.setAttribute('aria-expanded','false');if(window.scrollY<=24&&hd)hd.classList.remove('solid');}});})();
+</script>
+<script>
+(function(){
+  var mq=window.matchMedia('(prefers-reduced-motion: reduce)');
+  if(mq.matches||!('IntersectionObserver' in window))return;
+  document.documentElement.classList.add('motion');
+  function splitWords(h,base,step){
+    var words=[];
+    (function walk(node){
+      Array.prototype.slice.call(node.childNodes).forEach(function(c){
+        if(c.nodeType===3){
+          var frag=document.createDocumentFragment();
+          c.textContent.split(/(\s+)/).forEach(function(part){
+            if(!part)return;
+            if(/^\s+$/.test(part)){frag.appendChild(document.createTextNode(' '));return;}
+            var w=document.createElement('span');w.className='w';
+            var i=document.createElement('span');i.className='wi';i.textContent=part;
+            i.style.setProperty('--d',(base+words.length*step).toFixed(2)+'s');
+            w.appendChild(i);frag.appendChild(w);words.push(i);
+          });
+          c.parentNode.replaceChild(frag,c);
+        }else if(c.nodeType===1&&c.tagName!=='BR'){walk(c);}
+      });
+    })(h);
+    return words;
+  }
+  var h1=document.querySelector('.heroX h1'); if(h1)splitWords(h1,0.35,0.15);
+  var h2io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('w-in');h2io.unobserve(e.target);}})},{threshold:0.4});
+  document.querySelectorAll('main h2, footer h2').forEach(function(h){splitWords(h,0,0.09);h2io.observe(h);});
+  var targets=[].slice.call(document.querySelectorAll('#services details, .pf-group, #approach li, #approach figure, #questions details, #contact .grid > div'));
+  var groups={};
+  targets.forEach(function(el){
+    el.classList.add('rv');
+    var key=el.parentElement; var n=(groups[key]||0); groups[key]=n+1;
+    el.style.transitionDelay=Math.min(n*0.09,0.45)+'s';
+    if(el.classList.contains('pf-group')){
+      el.querySelectorAll('.pf-mosaic img').forEach(function(im,i){im.style.transitionDelay=(0.15+i*0.13)+'s';});
+    }
+  });
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:0.18,rootMargin:'0px 0px -6% 0px'});
+  targets.forEach(function(el){io.observe(el);});
+  var fig=document.querySelector('.heroX .photo');
+  if(fig){var tick=false;addEventListener('scroll',function(){if(tick)return;tick=true;requestAnimationFrame(function(){tick=false;var y=Math.min(scrollY*0.05,14);fig.style.transform='translate3d(0,'+y+'px,0)';});},{passive:true});}
+})();
 </script>
 </body></html>
